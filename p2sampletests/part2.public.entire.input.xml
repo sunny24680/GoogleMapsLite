@@ -1,0 +1,141 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part2in.xsd"
+	spatialWidth="1024"
+	spatialHeight="1024"
+	pmOrder="3"
+	g = "10" >
+ <mapRoad start="A1" end="A2"/>
+ <mapRoad start="A1" end="A4"/>
+ <mapRoad start="A1" end="A5"/>
+ <mapRoad start="A1" end="A6"/>
+ <mapRoad start="A2" end="A6"/>
+ <mapRoad start="A4" end="A5"/>
+ <mapRoad start="A5" end="A6"/>
+ <createCity name="A1" x="1" y="50" radius="0" color="black"/>
+ <createCity name="A2" x="100" y="50" radius="0" color="black"/>
+ <createCity name="A3" x="50" y="50" radius="0" color="black"/>
+ <createCity name="A4" x="1" y="100" radius="0" color="black"/>
+ <createCity name="A5" x="50" y="100" radius="0" color="black"/>
+ <createCity name="A6" x="100" y="100" radius="0" color="black"/>
+ <createCity name="A7" x="105" y="105" radius="0" color="black"/>
+ <createCity name="B" x="70" y="70" radius="0" color="black"/>
+ <createCity name="C" x="55" y="55" radius="0" color="black"/>
+ 
+ <createCity name="E" x="99" y="55" radius="0" color="black"/>
+ <createCity name="F" x="500" y="55" radius="0" color="black"/>
+ <createCity name="G" x="700" y="55" radius="0" color="black"/>
+ <createCity name="H" x="1000" y="55" radius="0" color="black"/>
+ 
+ <createCity name="I" x="1000" y="55" radius="0" color="black"/>
+ <createCity name="J" x="1000" y="55" radius="0" color="black"/>
+ 
+ <listCities sortBy = "name"/>
+ <listCities sortBy = "coordinate"/>
+ 
+ <mapRoad start="A1" end="A2"/>
+ <mapRoad start="A1" end="A4"/>
+ <mapRoad start="A1" end="A5"/>
+ <mapRoad start="A1" end="A6"/>
+ <mapRoad start="A2" end="A6"/>
+ <mapRoad start="A4" end="A5"/>
+ <mapRoad start="A5" end="A6"/>
+ 
+ <mapCity name ="C" /> 
+ <mapCity name ="E" /> 
+ <mapCity name ="F" /> 
+ <mapCity name ="G" /> 
+ <mapCity name ="H" /> 
+ <mapCity name ="A1" /> 
+ 
+ <mapRoad start="A4" end="A5"/>
+ <mapRoad start="C" end="F"/>
+ <mapRoad start="I" end="J"/>
+ 
+ <printPMQuadtree />
+ 
+ <clearAll/>
+ 
+ <printPMQuadtree />
+ 
+ <listCities sortBy = "name"/>
+ <listCities sortBy = "coordinate"/>
+ 
+ <mapRoad start="A6" end="A7"/>
+ 
+ <createCity name="A1" x="1" y="50" radius="0" color="black"/>
+ <createCity name="A2" x="100" y="50" radius="0" color="black"/>
+ <createCity name="A3" x="50" y="50" radius="0" color="black"/>
+ <createCity name="A4" x="1" y="100" radius="0" color="black"/>
+ <createCity name="A5" x="50" y="100" radius="0" color="black"/>
+ <createCity name="A6" x="100" y="100" radius="0" color="black"/>
+ <createCity name="A7" x="105" y="105" radius="0" color="black"/>
+ <createCity name="B" x="70" y="70" radius="0" color="black"/>
+ <createCity name="C" x="55" y="55" radius="0" color="black"/>
+ 
+ <createCity name="E" x="99" y="55" radius="0" color="black"/>
+ <createCity name="F" x="500" y="55" radius="0" color="black"/>
+ <createCity name="G" x="700" y="55" radius="0" color="black"/>
+ <createCity name="H" x="1000" y="55" radius="0" color="black"/>
+ 
+ <createCity name="I" x="1000" y="55" radius="0" color="black"/>
+ <createCity name="J" x="1000" y="55" radius="0" color="black"/>
+ 
+  <createCity name="N" x="-5" y="-5" radius="0" color="black"/>
+  
+ <createCity name="M" x="-10" y="-10" radius="0" color="black"/>
+ <clearAll />
+ <mapRoad start="Z" end="A1"/>
+ <mapRoad start="A3" end="Y"/>
+ <mapRoad start="A1" end="Q"/>
+ <mapRoad start="M" end="K"/>
+ <mapRoad start="A2" end="K"/>
+ <mapRoad start="A1" end="A6"/>
+ <mapRoad start="M" end="N"/>
+ <mapRoad start="A2" end="A6"/>
+ <mapCity name ="A1" /> 
+ <mapRoad start="A4" end="A5"/>
+ <mapRoad start="A5" end="A4"/>
+ 
+ <printPMQuadtree />
+ 
+ <mapRoad start="A5" end="A6"/>
+ <mapCity name ="G" /> 
+ <mapRoad start="A2" end="A6"/>
+ <mapCity name ="F" /> 
+ <mapRoad start="A3" end="Y"/>
+ 
+ <mapRoad start="A6" end="A6"/>
+ <createCity name="A5" x="50" y="100" radius="0" color="black"/>
+ <createCity name="A6" x="100" y="100" radius="0" color="black"/>
+ <createCity name="A7" x="105" y="105" radius="0" color="black"/>
+ <createCity name="B" x="70" y="70" radius="0" color="black"/>
+ <createCity name="C" x="55" y="55" radius="0" color="black"/>
+ 
+ <createCity name="J" x="99" y="55" radius="0" color="black"/>
+ <createCity name="F" x="500" y="55" radius="0" color="black"/>
+ <createCity name="G" x="700" y="55" radius="0" color="black"/>
+ <createCity name="H" x="1000" y="55" radius="0" color="black"/>
+ 
+ <createCity name="I" x="1000" y="55" radius="0" color="black"/>
+ <createCity name="J" x="1000" y="55" radius="0" color="black"/>
+ <mapCity name ="C" /> 
+ <mapCity name ="E" /> 
+ <mapCity name ="F" /> 
+ <mapCity name ="G" /> 
+ <mapCity name ="H" /> 
+ <mapCity name ="A1" /> 
+ 
+<printPMQuadtree />
+<clearAll/>
+<printPMQuadtree />
+ <createCity name="J" x="-10" y="2000" radius="0" color="black"/>
+ <createCity name="F" x="2000" y="-15" radius="0" color="black"/>
+ <createCity name="G" x="700" y="55" radius="0" color="black"/>
+ <createCity name="H" x="1000" y="55" radius="0" color="black"/>
+ 
+ <mapRoad start="J" end="F"/>
+ 
+ <printPMQuadtree />
+
+</commands>

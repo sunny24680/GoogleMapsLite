@@ -1,0 +1,22 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part1in.xsd"
+ 	spatialWidth="128"
+ 	spatialHeight="128">
+<listCities sortBy="name" />
+<createCity name="Baltimore" y="39" x="76" radius="5" color="black"/>
+<createCity name="Baltimore" y="39" x="76" radius="5" color="black"/>
+<createCity name="Baltimore" y="0" x="0" radius="5" color="black"/>
+<createCity name="CapeTown" y="45" x="80" radius="5" color="black"/>
+<deleteCity name="Atlanta"/>
+<mapCity name="Atlanta"/>
+<mapCity name="Baltimore"/>
+<mapCity name="Baltimore"/>
+<mapCity name="CapeTown"/>
+<printPRQuadtree />
+<unmapCity name="Detroit"/>
+<unmapCity name="CapeTown"/>
+<unmapCity name="Baltimore"/>
+<rangeCities x="0" y="0" radius="1" />
+<nearestCity x="0" y="0" />
+</commands>

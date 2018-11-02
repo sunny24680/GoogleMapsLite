@@ -1,0 +1,52 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part1in.xsd"
+	spatialWidth="256"
+	spatialHeight="256">
+
+<createCity name="city1" x="140" y="37" radius="5" color="black"/>
+<createCity name="city2" x="148" y="120" radius="5" color="black"/>
+<createCity name="city3" x="28" y="89" radius="5" color="black"/>
+<createCity name="city4" x="0" y="0" radius="5" color="black"/>
+<createCity name="city5" x="128" y="128" radius="5" color="black"/>
+<createCity name="city6" x="0" y="255" radius="5" color="black"/>
+<createCity name="city7" x="255" y="0" radius="5" color="black"/>
+<createCity name="city8" x="255" y="255" radius="5" color="black"/>
+<createCity name="city9" x="128" y="129" radius="5" color="black"/>
+<createCity name="city10" x="128" y="127" radius="5" color="black"/>
+<createCity name="city11" x="500" y="500" radius="5" color="black"/>
+<createCity name="city12" x="0" y="0" radius="0" color="black"/>
+<createCity name="city13" x="0" y="0" radius="0" color="black"/>
+<createCity name="city14" x="256" y="0" radius="0" color="black"/>
+<createCity name="city15" x="1" y="0" radius="0" color="black"/>
+
+
+<mapCity name="city1" />
+<mapCity name="city2" />
+<mapCity name="city3" />
+<mapCity name="city4" />
+<mapCity name="city5" />
+<mapCity name="city6" />
+<mapCity name="city7" />
+<mapCity name="city8" />
+<mapCity name="city9" />
+<mapCity name="city10"/>
+<mapCity name="city11"/>
+<mapCity name="city12"/>
+<mapCity name="city13"/>
+<unmapCity name="city16"/>
+<createCity name="city15" x="1" y="0" radius="0" color="black"/>
+<unmapCity name="city15"/>
+
+
+<unmapCity name="city6"/>
+<unmapCity name="city2"/>
+<unmapCity name="city9"/>
+<unmapCity name="city11"/>
+
+<printPRQuadtree />
+<rangeCities x="500" y="500" radius="1000" saveMap="lol"/>
+<rangeCities x="1" y="1" radius="1000" saveMap="lol"/>
+<rangeCities x="0" y="0" radius="0" saveMap="lol"/>
+
+</commands>

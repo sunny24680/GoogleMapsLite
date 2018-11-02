@@ -1,0 +1,24 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part1in.xsd"
+ 	spatialWidth="512"
+ 	spatialHeight="512">
+ 	<deleteCity name="SIKE"/>
+ 	<listCities sortBy="name"/>
+ 	<listCities sortBy="coordinate"/>
+ 	<mapCity name="Defnot"/>
+ 	<unmapCity name="Sike"/>
+ 	<printPRQuadtree />
+ 	<rangeCities x="200" y="200" radius="5" />
+ 	<nearestCity x="200" y="100" />
+ 	<createCity name="Acity" x="0" y="0" radius="5" color="black"/>
+ 	<createCity name="city1" x="140" y="37" radius="5" color="black"/>
+	<createCity name="city2" x="148" y="120" radius="5" color="black"/>
+	<createCity name="city3" x="750" y="89" radius="5" color="black"/>
+	<createCity name="Acity" x="50" y="102" radius="1" color="black"/>
+	<createCity name="city4" x="148" y="120" radius="2" color="black"/>
+	<mapCity name="city1"/>
+	<mapCity name="city1"/>
+	<mapCity name="city3"/>
+	<unmapCity name="city2"/>
+ </commands>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results>
+  <error type="noCitiesToList">
+    <command name="listCities"/>
+    <parameters>
+      <sortBy value="name"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Baltimore"/>
+      <x value="76"/>
+      <y value="39"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="duplicateCityCoordinates">
+    <command name="createCity"/>
+    <parameters>
+      <name value="Baltimore"/>
+      <x value="76"/>
+      <y value="39"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+  </error>
+  <error type="duplicateCityName">
+    <command name="createCity"/>
+    <parameters>
+      <name value="Baltimore"/>
+      <x value="0"/>
+      <y value="0"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="CapeTown"/>
+      <x value="80"/>
+      <y value="45"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="cityDoesNotExist">
+    <command name="deleteCity"/>
+    <parameters>
+      <name value="Atlanta"/>
+    </parameters>
+  </error>
+  <error type="nameNotInDictionary">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="Atlanta"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="mapCity"/>
+    <parameters>
+      <name value="Baltimore"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="cityAlreadyMapped">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="Baltimore"/>
+    </parameters>
+  </error>
+  <error type="cityOutOfBounds">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="CapeTown"/>
+    </parameters>
+  </error>
+  <error type="nameNotInDictionary">
+    <command name="unmapCity"/>
+    <parameters>
+      <name value="Detroit"/>
+    </parameters>
+  </error>
+  <error type="cityNotMapped">
+    <command name="unmapCity"/>
+    <parameters>
+      <name value="CapeTown"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="unmapCity"/>
+    <parameters>
+      <name value="Baltimore"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="mapIsEmpty">
+    <command name="printPRQuadtree"/>
+    <parameters/>
+  </error>
+  <error type="noCitiesExistInRange">
+    <command name="rangeCities"/>
+    <parameters>
+      <x value="0"/>
+      <y value="0"/>
+      <radius value="1"/>
+    </parameters>
+  </error>
+  <error type="mapIsEmpty">
+    <command name="nearestCity"/>
+    <parameters>
+      <x value="0"/>
+      <y value="0"/>
+    </parameters>
+  </error>
+</results>
