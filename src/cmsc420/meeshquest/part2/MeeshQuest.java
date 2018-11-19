@@ -13,6 +13,7 @@ import org.xml.sax.SAXException;
 
 import cmsc420.drawing.CanvasPlus;
 import cmsc420.structure.PRQT.PRQT;
+import cmsc420.stucture.PMQT.PM3QT;
 import cmsc420.xml.XmlUtility;
 import cmsc420.commands.*;
 
@@ -32,7 +33,7 @@ public class MeeshQuest {
 			e1.printStackTrace();
 		}
         try {
-        	File test = new File ("new/part1.nonFatalError.input.xml");
+        	//File test = new File ("new/part1.nonFatalError.input.xml");
         	//Document doc = XmlUtility.validateNoNamespace(test);    	
         	Document doc = XmlUtility.validateNoNamespace(System.in);
         	Element commandNode = doc.getDocumentElement();
@@ -43,6 +44,7 @@ public class MeeshQuest {
         	
         	//canvas tree
         	CommandParser.tree = new PRQT(spatialHeight, spatialWidth);
+        	CommandParser.AVLTree = new PM3QT(spatialHeight, spatialWidth);
         	
         	canvas.setFrameSize(spatialWidth, spatialHeight);
         	

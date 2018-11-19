@@ -5,8 +5,8 @@ import cmsc420.geom.Geometry2D;
 public class PM3QT extends PMQT{
 	static Validator v = new PM3Validator();
 	
-	public PM3QT() {
-		super(v);
+	public PM3QT(int x, int y) {
+		super(v, x, y);
 	}
 	
 	private static class PM3Validator implements Validator{

@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import org.w3c.dom.Element;
 
 import cmsc420.structure.PRQT.*;
+import cmsc420.structure.PRQT.Node;
+import cmsc420.stucture.PMQT.*;
 import cmsc420.structure.*;
 import cmsc420.structure.Dictionary;
 import cmsc420.meeshquest.part2.*;
@@ -22,9 +24,11 @@ public class CommandParser {
 	private final static String SAVE_MAP = "saveMap";
 	private final static String RANGE_CITIES = "rangeCities";
 	private final static String NEAREST_CITY = "nearestCity";
+	private final static String PRINT_AVL = "printAvlTree";
 	private final static Dictionary dict = new Dictionary();
 	private final static XMLHandler xml = new XMLHandler();
 	public static PRQT tree;
+	public static PM3QT AVLTree;
 	
 	public static Element parseCommand(Element command){
 		Element res = (Element) MeeshQuest.results.getFirstChild();
@@ -48,6 +52,8 @@ public class CommandParser {
 			case RANGE_CITIES : rangeCities(command);
 			break;
 			case NEAREST_CITY : nearestCity(command);
+			break;
+			case PRINT_AVL : printAVL(command);
 			break;
 			default : ;
 		}
@@ -235,6 +241,14 @@ public class CommandParser {
 			xml.success("nearestCity", output, command);
 		} else {
 			xml.error("nearestCity", "mapIsEmpty", command);
+		}
+	}
+	
+	private static void printAVL (Element command) {
+		if (AVLTree.isEmpty()) {
+			xml.error("printAvlTree", "emptyTree", command);
+		} else {
+			xml.success("hello",command);
 		}
 	}
 }

@@ -137,6 +137,10 @@ public class XMLHandler {
 		return output;
 	}
 	
+	public Element AVLOutput() {
+		return null;
+	}
+	
 	public Element PRQTOutput(ArrayList<Node> list) {
 		Element PRQT = results.createElement("quadtree");
 		if (list.get(0) instanceof grayNode) {

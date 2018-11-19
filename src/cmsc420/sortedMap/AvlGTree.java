@@ -1,4 +1,4 @@
-package cmsc420.sortedMap;
+package cmsc420.sortedmap;
 
 import java.util.AbstractMap;
 import java.util.AbstractSet;
@@ -10,6 +10,8 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import java.util.SortedMap;
+import java.util.Map.Entry;
+import java.util.NavigableMap;
 
 
 /*
@@ -38,32 +40,88 @@ import java.util.SortedMap;
  * 		tailMap
  * 		values
  */
-
 public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
-	AvlGNode<K,V> root;
+	public AvlGNode<K,V> root = null;
 	EntrySet entrySet = null;
 	private int g = 1;
 	private int modCount,size = 0;
-	Comparator<? super K> comparator;
+	Comparator<? super K> comparator = null;
 	
-	public AvlGTree(final int g) {
-		this.g = g;
-		this.comparator = null;
+	public AvlGTree(final Comparator<? super K> c) {
+		comparator = c;
 	}
 	
-	public AvlGTree(final int g, final Comparator<K> comparator) {
-		this.g= g;
+	public AvlGTree(final int g) {
+		if (g > 1)	
+			this.g = g;
+	}
+	
+	public AvlGTree(final Comparator<? super K> comparator, final int g) {
+		if (g > 1)
+			this.g= g;
 		this.comparator = comparator;
 	}
     
+	/////////////////////////////////////////////////////////////////////////////
+	/*
+	 *  InnerClass 
+	 */
+    /////////////////////////////////////////////////////////////////////////////
+	
+	public class AvlGNode<K, V> extends AbstractMap.SimpleEntry<K,V> implements SortedMap.Entry<K,V>{
+		private V data;
+		public int height;
+		AvlGNode<K, V> left, right, parent;
+		
+		public AvlGNode(K key, V data, AvlGNode<K, V> parent) {
+			super(key, data);
+			left = null;
+			right = null;
+			height = 1;
+			this.parent = parent;
+		}
+
+		public boolean equals(Object o) {
+			if (!(o instanceof Entry<?, ?>))
+				return false;
+			Entry<K,V> e = (Entry<K,V>)o;
+			
+			return this.getKey().equals(e.getKey()) && this.getValue().equals(e.getValue());
+		}
+		
+		public int hashCode() {
+			int keyHash = (getKey()==null ? 0 : getKey().hashCode());
+			int valueHash = (getValue()==null ? 0 : getValue().hashCode());
+			return keyHash ^ valueHash;
+		}
+		
+		public String toString() {
+			return getKey() + "=" + getValue()+ " height = "+height;
+		}
+			 
+	}
+	
+	/////////////////////////////////////////////////////////////////////////////
+	/*
+	 *  main methods in AvlGTree
+	 */
+    /////////////////////////////////////////////////////////////////////////////
+	
 	@Override
 	public V put(K key, V value) {
 		if (key == null || value == null) {
 			throw new NullPointerException();
 		}
-		insert(key, value, root, null);
 		modCount++;
+		if (this.containsKey(key)) {
+			V temp = this.get(key);
+			root = insert(key, value, root, null);
+			return temp;
+		} else
+			root = insert(key, value, root, null);
+		//System.out.println("root "+root);
 		return null;
+		
 	}
 	
 	@Override
@@ -73,7 +131,7 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
 	
 	@Override
 	public boolean isEmpty() {
-		return (root == null) ? false : true;
+		return (root == null) ? true : false;
 	}
 
 	@Override
@@ -127,8 +185,11 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
 	}
 
 	@Override
-	public SortedMap<K,V> subMap(Object fromKey, Object toKey) {
-		return null;
+	public SortedMap<K,V> subMap(K fromKey, K toKey) {
+		if ((compare(fromKey, toKey) <= 0) && (compare(fromKey, firstKey()) >= 0) && (compare(toKey, lastKey()) <= 0))
+			return new subMap(fromKey, toKey);
+		else 
+			return null;
 	}
 	
 	@Override
@@ -179,24 +240,28 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
 	private AvlGNode<K, V> insert(K key, V data, AvlGNode<K, V> cur, AvlGNode<K, V> parent)
     {
 		//adds the node to the root/end of the tree
-        if (cur == null)
+		//System.out.println("IN NODE "+cur);
+        if (cur == null) {
             cur = new AvlGNode<K, V>(key, data, parent);
+        	return cur;
+        }
         else { 
         	//adding to the left side of the tree
         	if (compare(key, cur.getKey()) < 0) {
 	            cur.left = insert(key, data, cur.left, cur);
 	            
 	            //checks height difference 
-	            if(cur.left.height - cur.right.height > g)
+	            if(heightDifference(cur.left, cur.right) > g)
 	                if(compare(key, (K) cur.left.getKey()) < 0 )
 	                    cur = rotateLeftChild(cur);
 	                else
 	                    cur = rotateLeftRightChild(cur);
         	} 
-        	else {
-	        	//add to the right subtree
+        	else if (compare(key, cur.getKey()) > 0){
+	        	//add to the right subtree	
 	        	cur.right = insert(key, data, cur.right, cur);
-	            if(cur.right.height - cur.left.height > g)
+	        	//System.out.println("checing right"+cur.right);
+	            if(heightDifference(cur.right, cur.left) > g)
 	                if(compare(key,  (K) cur.right.getKey()) > 0) {
 	                	//if an outside case
 	                    cur = rotateRightChild(cur);
@@ -206,18 +271,51 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
 	                    cur = rotateRightLeftChild(cur);
 	                }
 	        }
+        	else {	
+        		cur.setValue(data);
+        		return cur;
+        	}
         }
-	    cur.height = Math.max(cur.left.height, cur.right.height) + 1;
+        
+        
+	    cur.height = maxHeight(cur.left, cur.right) + 1;
 	    return cur;
     }
 	
+	private int heightDifference(AvlGNode<K, V> first, AvlGNode<K, V> second) {
+		if (first == null && second == null)
+			return 0;
+		if (first == null)
+			return second.height;
+		if (second == null)
+			return first.height;
+		return first.height-second.height;
+	}
+	
+	private int maxHeight(AvlGNode<K, V> first, AvlGNode<K, V> second) {
+		if (first == null && second == null)
+			return 1;
+		if (first == null)
+			return second.height;
+		if (second == null)
+			return first.height;
+		return Math.max(first.height, second.height);
+	}
+	
 	private AvlGNode<K, V> rotateLeftChild(AvlGNode<K, V> pivot)
     {
-        AvlGNode<K, V> temp = pivot.left;
+        AvlGNode<K, V> temp = pivot.left;        
         pivot.left = temp.right;
+        if (temp.right != null) {
+        	temp.right.parent = pivot;
+        	temp.height = maxHeight(temp.left, temp.right) + 1;
+        	pivot.height = maxHeight(pivot.left, pivot.right) + 1;
+        }        	
         temp.right = pivot;
-        pivot.height = Math.max(pivot.left.height, pivot.right.height) + 1;
-        temp.height = Math.max(temp.left.height, pivot.height) + 1;
+        temp.parent = pivot.parent;
+        pivot.parent = temp;        
+        pivot.height = maxHeight(pivot.left, pivot.right) + 1;
+        temp.height = maxHeight(temp.left, pivot) + 1;
         return temp;
     }
 	
@@ -225,9 +323,16 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
     {
         AvlGNode<K, V> temp = pivot.right;
         pivot.right = temp.left;
+        if (temp.left != null) {
+        	temp.left.parent = pivot;
+        	temp.height = maxHeight(temp.left, temp.right) + 1;
+        	pivot.height = maxHeight(pivot.left, pivot.right) + 1;
+        } 
         temp.left = pivot;
-        pivot.height = Math.max(pivot.left.height, pivot.right.height) + 1;
-        temp.height = Math.max(temp.left.height, pivot.height) + 1;
+        temp.parent = pivot.parent;
+        pivot.parent = temp;
+        pivot.height = maxHeight(pivot.left, pivot.right) + 1;
+        temp.height = maxHeight(temp.left, pivot) + 1;
         return temp;
     }
 	
@@ -250,6 +355,14 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
     /////////////////////////////////////////////////////////////////////////////
 	
 	private int size(AvlGNode<K, V> cur) {
+		if (cur == null) 
+			return 0;
+		if (cur.left == null && cur.right == null)
+			return 1;
+		if (cur.left == null)
+			return size(cur.right) + 1;
+		if (cur.right == null)
+			return size(cur.left) + 1;
 		return (root == null) ? 0 : 1+size(cur.left)+size(cur.right);
 	}
 	
@@ -285,7 +398,7 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
 		 return p;
 	}
 	
-	static <K,V> AvlGNode<K,V> successor(AvlGNode<K,V> t) {
+	<K,V> AvlGNode<K,V> successor(AvlGNode<K,V> t) {
 		  if (t == null)
 		      return null;
 		  else if (t.right != null) {
@@ -304,7 +417,7 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
 		  }
 	}
 	
-	static <K,V> AvlGNode<K,V> predecessor(AvlGNode<K,V> t) {
+	<K,V> AvlGNode<K,V> predecessor(AvlGNode<K,V> t) {
 		if (t == null)
 			return null;
 		else if (t.left != null) {
@@ -331,6 +444,23 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
 		}
 	}
 	
+	public void print(AvlGNode<K, V> cur) {
+		if (cur != null) {
+			System.out.println("NODE = "+cur.toString());
+			System.out.println("PARENT NODE = "+cur.parent);
+			if (cur.left != null)
+				System.out.print("Left Child = "+cur.left.toString());
+			else 
+				System.out.print("No Left Child ");
+			if (cur.right != null)
+				System.out.println(": Right Child = "+cur.right.toString());
+			else 
+				System.out.println(": No Right Child");
+			print(cur.left);
+			print(cur.right);
+		}
+	}
+	
 	/////////////////////////////////////////////////////////////////////////////
 	/*
 	 *  EntrySet 
@@ -338,6 +468,37 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
     /////////////////////////////////////////////////////////////////////////////
 	
 	class EntrySet extends AbstractSet<AvlGNode<K, V>> {
+
+		@Override
+		public Iterator<AvlGNode<K, V>> iterator() {
+			return new EntryIterator(getFirstEntry());
+		}
+		
+		@Override
+		public int size() {
+			return AvlGTree.this.size();
+		}
+		
+		public void clear() {
+			AvlGTree.this.clear();
+		}
+		
+		public boolean contains(Object o) {
+			if (!(o instanceof Map.Entry))
+				return false;
+			AvlGNode<K, V> entry = (AvlGNode<K, V>) o;
+			V val = entry.getValue();
+			AvlGNode<K, V> p = getEntry(entry.getKey());
+			return p != null && p.getValue().equals(val);
+		}
+		
+		public boolean remove(Object o) {
+			throw new UnsupportedOperationException();
+		}
+		
+	}
+	
+	class subMapEntrySet extends AbstractSet<AvlGNode<K, V>> {
 
 		@Override
 		public Iterator<AvlGNode<K, V>> iterator() {
@@ -422,10 +583,133 @@ public class AvlGTree<K,V> extends AbstractMap<K,V> implements SortedMap<K,V>{
 		}
 	}
 	
+	abstract class SubMapIterator<T> implements Iterator<T> {
+	     AvlGNode<K,V> lastReturned;
+	     AvlGNode<K,V> next;
+	     final Object fenceKey;
+	     int expectedModCount;
+
+	     SubMapIterator(AvlGNode<K,V> first,
+	    		 AvlGNode<K,V> fence) {
+	         expectedModCount = AvlGTree.this.modCount;
+	         lastReturned = null;
+	         next = first;
+	         fenceKey = fence == null ? null : fence.getKey();
+	     }
+
+	     public final boolean hasNext() {
+	         return next != null && next.key != fenceKey;
+	     }
+
+	     final AvlGNode<K,V> nextEntry() {
+	    	 AvlGNode<K,V> e = next;
+	         if (e == null || e.getKey() == fenceKey)
+	             throw new NoSuchElementException();
+	         if (AvlGTree.this.modCount != expectedModCount)
+	             throw new ConcurrentModificationException();
+	         next = successor(e);
+	         lastReturned = e;
+	         return e;
+	     }
+
+	 }
+
+	 final class SubMapEntryIterator extends SubMapIterator<Map.Entry<K,V>> {
+	     SubMapEntryIterator(AvlGNode<K,V> first,
+	    		 	AvlGNode<K,V> fence) {
+	         super(first, fence);
+	     }
+	     public Map.Entry<K,V> next() {
+	         return nextEntry();
+	     }
+	 }
+	        	 
+	
 	/////////////////////////////////////////////////////////////////////////////
 	/*
 	 *  SubMap
 	 */
     /////////////////////////////////////////////////////////////////////////////
- 
+
+	private class subMap extends AbstractMap<K,V> implements SortedMap<K,V>{
+		private K fromKey, toKey;
+		private Comparator<? super K> comp = AvlGTree.this.comparator;
+		
+		public subMap(K from, K to) {
+			fromKey = from;
+			Iterator i = AvlGTree.this.entrySet().iterator();
+			while (i.next().)
+			toKey = to;
+		}
+		
+		@Override
+		public Set<Entry<K, V>> entrySet() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public Comparator<? super K> comparator() {
+			return comp;
+		}
+
+		@Override
+		public SortedMap<K, V> subMap(K fromKey, K toKey) {
+			if ((AvlGTree.this.compare(fromKey, toKey) <= 0) && (AvlGTree.this.compare(fromKey, this.firstKey()) >= 0) && (AvlGTree.this.compare(toKey, this.lastKey()) <= 0))
+				return new subMap(fromKey, toKey);
+			else 
+				return null;
+		}
+		
+		final AvlGNode<K,V> getLastEntry() {
+			 AvlGNode<K,V> p = AvlGTree.this.getFirstEntry();
+			 AvlGNode<K,V> prev = null;
+			 while (AvlGTree.this.compare(p.getKey(), toKey) < 0) {
+				 prev = p;
+				 p = successor(p);
+			 }
+			 return prev;
+		}
+		
+		final AvlGNode<K,V> getFirstEntry() {
+			 AvlGNode<K,V> p = AvlGTree.this.getLastEntry();
+			 AvlGNode<K,V> prev = null;
+			 while (AvlGTree.this.compare(p.getKey(), fromKey) > 0) {
+				 prev = p;
+				 p = successor(p);
+			 }
+			 return prev;
+		}
+
+		@Override
+		//dont need to do 
+		public SortedMap<K, V> headMap(K toKey) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		//dont need to do 
+		public SortedMap<K, V> tailMap(K fromKey) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public K firstKey() {
+			return this.getFirstEntry().getKey();
+		}
+
+		@Override
+		public K lastKey() {
+			return this.getLastEntry().getKey();
+		}
+		
+		public boolean inRange(K x) {
+			if ((AvlGTree.this.compare(x, fromKey) >= 0) && (AvlGTree.this.compare(x, toKey)) < 0 )
+				return true;
+			else 
+				return false;
+		}
+	}
 }

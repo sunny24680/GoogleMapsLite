@@ -10,7 +10,7 @@ public class PM1QT extends PMQT{
 	private static class PM1Validator implements Validator{
 
 		@Override
-		public boolean isValid(Node n) {
+		public boolean isValid(blackNode n) {
 			// TODO Auto-generated method stub
 			return false;
 		}

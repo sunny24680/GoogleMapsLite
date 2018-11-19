@@ -15,11 +15,21 @@ import cmsc420.structure.Road;
 public abstract class PMQT {
 	
 	public Validator validator = null;
-	public Node root = null;
+	public Node root;
 	public final Node white = new whiteNode();
+	public Rectangle2D dimensions;
 	
-	public PMQT(Validator v) {
+	public PMQT(Validator v, int x, int y) {
 		validator = v;
+		root = white;
+		dimensions = new Rectangle2D.Float(0.0f, 0.0f, (float)x, (float)y);
+	}
+	
+	public boolean isEmpty() {
+		if (root == white)
+			return true;
+		else 
+			return false;
 	}
 	
 	/////////////////////////////////////////////////////////////////////////////
@@ -141,10 +151,10 @@ public abstract class PMQT {
 			dimension = dimensions;
 			float h = (float) (dimension.getHeight()/2);
 			float w = (float) (dimension.getWidth()/2);
-			quad[0] = new Rectangle2D.Float(dimension.x, dimension.y, w, h);
-			quad[1] = new Rectangle2D.Float(center.x, dimension.y, w, h);
-			quad[2] = new Rectangle2D.Float(dimension.x, center.y, w, h);
-			quad[3] = new Rectangle2D.Float(center.x, center.y, w, h);
+			quad[0] = new Rectangle2D.Float(dimension.x, center.y, w, h);
+			quad[1] = new Rectangle2D.Float(center.x, center.y, w, h);
+			quad[2] = new Rectangle2D.Float(dimension.x, dimension.y, w, h);
+			quad[3] = new Rectangle2D.Float(center.x, dimension.y, w, h);
 			MeeshQuest.canvas.addRectangle(dimension.x, dimension.y, dimension.getWidth()/2, dimension.getHeight()/2, Color.GRAY, false);
 			MeeshQuest.canvas.addRectangle(center.x, dimension.y, dimension.getWidth()/2, dimension.getHeight()/2, Color.GRAY, false);
 			MeeshQuest.canvas.addRectangle(dimension.x, center.y, dimension.getWidth()/2, dimension.getHeight()/2, Color.GRAY, false);
