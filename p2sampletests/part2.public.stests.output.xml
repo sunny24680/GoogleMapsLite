@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results>
+  <success>
+    <command id="1" name="createCity"/>
+    <parameters>
+      <name value="City1"/>
+      <x value="170"/>
+      <y value="80"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command id="2" name="createCity"/>
+    <parameters>
+      <name value="City2"/>
+      <x value="730"/>
+      <y value="300"/>
+      <radius value="7"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command id="3" name="createCity"/>
+    <parameters>
+      <name value="City3"/>
+      <x value="360"/>
+      <y value="920"/>
+      <radius value="8"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command id="4" name="createCity"/>
+    <parameters>
+      <name value="City4"/>
+      <x value="550"/>
+      <y value="620"/>
+      <radius value="4"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="duplicateCityName">
+    <command id="5" name="createCity"/>
+    <parameters>
+      <name value="City1"/>
+      <x value="200"/>
+      <y value="30"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+  </error>
+  <success>
+    <command id="6" name="createCity"/>
+    <parameters>
+      <name value="City5"/>
+      <x value="200"/>
+      <y value="200"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="duplicateCityCoordinates">
+    <command id="7" name="createCity"/>
+    <parameters>
+      <name value="City2"/>
+      <x value="550"/>
+      <y value="620"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+  </error>
+  <success>
+    <command id="8" name="clearAll"/>
+    <parameters/>
+    <output/>
+  </success>
+  <error type="noCitiesToList">
+    <command id="9" name="listCities"/>
+    <parameters>
+      <sortBy value="name"/>
+    </parameters>
+  </error>
+  <error type="noCitiesToList">
+    <command id="10" name="listCities"/>
+    <parameters>
+      <sortBy value="coordinate"/>
+    </parameters>
+  </error>
+  <success>
+    <command id="11" name="createCity"/>
+    <parameters>
+      <name value="City1"/>
+      <x value="170"/>
+      <y value="80"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command id="12" name="createCity"/>
+    <parameters>
+      <name value="City2"/>
+      <x value="730"/>
+      <y value="300"/>
+      <radius value="7"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command id="13" name="createCity"/>
+    <parameters>
+      <name value="City3"/>
+      <x value="360"/>
+      <y value="920"/>
+      <radius value="8"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command id="14" name="createCity"/>
+    <parameters>
+      <name value="City4"/>
+      <x value="550"/>
+      <y value="620"/>
+      <radius value="4"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City5"/>
+      <x value="280"/>
+      <y value="430"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command id="15" name="listCities"/>
+    <parameters>
+      <sortBy value="name"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="City5" radius="5" x="280" y="430"/>
+        <city color="black" name="City4" radius="4" x="550" y="620"/>
+        <city color="black" name="City3" radius="8" x="360" y="920"/>
+        <city color="black" name="City2" radius="7" x="730" y="300"/>
+        <city color="black" name="City1" radius="5" x="170" y="80"/>
+      </cityList>
+    </output>
+  </success>
+  <success>
+    <command id="16" name="listCities"/>
+    <parameters>
+      <sortBy value="coordinate"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="City1" radius="5" x="170" y="80"/>
+        <city color="black" name="City2" radius="7" x="730" y="300"/>
+        <city color="black" name="City5" radius="5" x="280" y="430"/>
+        <city color="black" name="City4" radius="4" x="550" y="620"/>
+        <city color="black" name="City3" radius="8" x="360" y="920"/>
+      </cityList>
+    </output>
+  </success>
+  <success>
+    <command name="listCities"/>
+    <parameters>
+      <sortBy value="name"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="City5" radius="5" x="280" y="430"/>
+        <city color="black" name="City4" radius="4" x="550" y="620"/>
+        <city color="black" name="City3" radius="8" x="360" y="920"/>
+        <city color="black" name="City2" radius="7" x="730" y="300"/>
+        <city color="black" name="City1" radius="5" x="170" y="80"/>
+      </cityList>
+    </output>
+  </success>
+  <error type="startPointDoesNotExist">
+    <command id="18" name="mapRoad"/>
+    <parameters>
+      <start value="City10"/>
+      <end value="City1"/>
+    </parameters>
+  </error>
+  <error type="endPointDoesNotExist">
+    <command id="19" name="mapRoad"/>
+    <parameters>
+      <start value="City2"/>
+      <end value="City7"/>
+    </parameters>
+  </error>
+  <error type="startEqualsEnd">
+    <command id="20" name="mapRoad"/>
+    <parameters>
+      <start value="City3"/>
+      <end value="City3"/>
+    </parameters>
+  </error>
+  <error type="nameNotInDictionary">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="City10"/>
+    </parameters>
+  </error>
+  <success>
+    <command id="21" name="mapCity"/>
+    <parameters>
+      <name value="City1"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="cityAlreadyMapped">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="City1"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City6"/>
+      <x value="2000"/>
+      <y value="2000"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="cityOutOfBounds">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="City6"/>
+    </parameters>
+  </error>
+  <error type="startOrEndIsIsolated">
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="City1"/>
+      <end value="City2"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="City3"/>
+      <end value="City4"/>
+    </parameters>
+    <output>
+      <roadCreated end="City4" start="City3"/>
+    </output>
+  </success>
+  <error type="roadAlreadyMapped">
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="City3"/>
+      <end value="City4"/>
+    </parameters>
+  </error>
+  <success>
+    <command id="22" name="mapRoad"/>
+    <parameters>
+      <start value="City4"/>
+      <end value="City6"/>
+    </parameters>
+    <output>
+      <roadCreated end="City6" start="City4"/>
+    </output>
+  </success>
+  <success>
+    <command id="23" name="printPMQuadtree"/>
+    <parameters/>
+    <output>
+      <quadtree order="3">
+        <gray x="512" y="512">
+          <black cardinality="2">
+            <city color="black" name="City3" radius="8" x="360" y="920"/>
+            <road end="City4" start="City3"/>
+          </black>
+          <black cardinality="3">
+            <city color="black" name="City4" radius="4" x="550" y="620"/>
+            <road end="City6" start="City4"/>
+            <road end="City4" start="City3"/>
+          </black>
+          <black cardinality="1">
+            <isolatedCity color="black" name="City1" radius="5" x="170" y="80"/>
+          </black>
+          <white/>
+        </gray>
+      </quadtree>
+    </output>
+  </success>
+  <success>
+    <command name="clearAll"/>
+    <parameters/>
+    <output/>
+  </success>
+  <success>
+    <command id="24" name="clearAll"/>
+    <parameters/>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City1"/>
+      <x value="400"/>
+      <y value="400"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City2"/>
+      <x value="500"/>
+      <y value="400"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City3"/>
+      <x value="600"/>
+      <y value="400"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City4"/>
+      <x value="400"/>
+      <y value="300"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City5"/>
+      <x value="500"/>
+      <y value="300"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City6"/>
+      <x value="600"/>
+      <y value="300"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City7"/>
+      <x value="400"/>
+      <y value="200"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City8"/>
+      <x value="500"/>
+      <y value="200"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="City9"/>
+      <x value="600"/>
+      <y value="200"/>
+      <radius value="5"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="City1"/>
+      <end value="City2"/>
+    </parameters>
+    <output>
+      <roadCreated end="City2" start="City1"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="City1"/>
+      <end value="City4"/>
+    </parameters>
+    <output>
+      <roadCreated end="City4" start="City1"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="City8"/>
+      <end value="City1"/>
+    </parameters>
+    <output>
+      <roadCreated end="City1" start="City8"/>
+    </output>
+  </success>
+  <success>
+    <command id="23" name="printPMQuadtree"/>
+    <parameters/>
+    <output>
+      <quadtree order="3">
+        <gray x="512" y="512">
+          <white/>
+          <white/>
+          <gray x="256" y="256">
+            <white/>
+            <gray x="384" y="384">
+              <white/>
+              <gray x="448" y="448">
+                <white/>
+                <white/>
+                <black cardinality="4">
+                  <city color="black" name="City1" radius="5" x="400" y="400"/>
+                  <road end="City8" start="City1"/>
+                  <road end="City4" start="City1"/>
+                  <road end="City2" start="City1"/>
+                </black>
+                <black cardinality="2">
+                  <city color="black" name="City2" radius="5" x="500" y="400"/>
+                  <road end="City2" start="City1"/>
+                </black>
+              </gray>
+              <white/>
+              <black cardinality="3">
+                <city color="black" name="City4" radius="5" x="400" y="300"/>
+                <road end="City8" start="City1"/>
+                <road end="City4" start="City1"/>
+              </black>
+            </gray>
+            <white/>
+            <black cardinality="2">
+              <city color="black" name="City8" radius="5" x="500" y="200"/>
+              <road end="City8" start="City1"/>
+            </black>
+          </gray>
+          <white/>
+        </gray>
+      </quadtree>
+    </output>
+  </success>
+  <success>
+    <command id="25" name="rangeCities"/>
+    <parameters>
+      <x value="350"/>
+      <y value="450"/>
+      <radius value="100"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="City1" radius="5" x="400" y="400"/>
+      </cityList>
+    </output>
+  </success>
+  <error type="noCitiesExistInRange">
+    <command name="rangeCities"/>
+    <parameters>
+      <x value="250"/>
+      <y value="550"/>
+      <radius value="200"/>
+    </parameters>
+  </error>
+  <error type="noCitiesExistInRange">
+    <command name="rangeCities"/>
+    <parameters>
+      <x value="800"/>
+      <y value="800"/>
+      <radius value="10"/>
+    </parameters>
+  </error>
+  <error type="noRoadsExistInRange">
+    <command name="rangeRoads"/>
+    <parameters>
+      <x value="250"/>
+      <y value="450"/>
+      <radius value="150"/>
+    </parameters>
+  </error>
+  <error type="noRoadsExistInRange">
+    <command name="rangeRoads"/>
+    <parameters>
+      <x value="900"/>
+      <y value="900"/>
+      <radius value="10"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="nearestCity"/>
+    <parameters>
+      <x value="330"/>
+      <y value="440"/>
+    </parameters>
+    <output>
+      <city color="black" name="City1" radius="5" x="400" y="400"/>
+    </output>
+  </success>
+  <success>
+    <command id="26" name="nearestCity"/>
+    <parameters>
+      <x value="480"/>
+      <y value="230"/>
+    </parameters>
+    <output>
+      <city color="black" name="City8" radius="5" x="500" y="200"/>
+    </output>
+  </success>
+  <error type="cityNotFound">
+    <command name="nearestIsolatedCity"/>
+    <parameters>
+      <x value="470"/>
+      <y value="310"/>
+    </parameters>
+  </error>
+  <error type="cityNotFound">
+    <command id="27" name="nearestIsolatedCity"/>
+    <parameters>
+      <x value="390"/>
+      <y value="550"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="nearestRoad"/>
+    <parameters>
+      <x value="500"/>
+      <y value="300"/>
+    </parameters>
+    <output>
+      <road end="City8" start="City1"/>
+    </output>
+  </success>
+  <success>
+    <command id="28" name="nearestRoad"/>
+    <parameters>
+      <x value="100"/>
+      <y value="400"/>
+    </parameters>
+    <output>
+      <road end="City8" start="City1"/>
+    </output>
+  </success>
+  <success>
+    <command id="29" name="nearestCityToRoad"/>
+    <parameters>
+      <start value="City1"/>
+      <end value="City2"/>
+    </parameters>
+    <output>
+      <city color="black" name="City4" radius="5" x="400" y="300"/>
+    </output>
+  </success>
+  <error type="roadIsNotMapped">
+    <command name="nearestCityToRoad"/>
+    <parameters>
+      <start value="City8"/>
+      <end value="City12"/>
+    </parameters>
+  </error>
+  <error type="nonExistentStart">
+    <command id="29" name="shortestPath"/>
+    <parameters>
+      <start value="City12"/>
+      <end value="City13"/>
+    </parameters>
+  </error>
+  <error type="nonExistentEnd">
+    <command name="shortestPath"/>
+    <parameters>
+      <start value="City1"/>
+      <end value="City30"/>
+    </parameters>
+  </error>
+  <error type="nonExistentEnd">
+    <command name="shortestPath"/>
+    <parameters>
+      <start value="City1"/>
+      <end value="City9"/>
+    </parameters>
+  </error>
+  <success>
+    <command id="30" name="shortestPath"/>
+    <parameters>
+      <start value="City8"/>
+      <end value="City2"/>
+    </parameters>
+    <output>
+      <path hops="2" length="323.607">
+        <road end="City1" start="City8"/>
+        <right/>
+        <road end="City2" start="City1"/>
+      </path>
+    </output>
+  </success>
+  <success>
+    <command name="printPMQuadtree"/>
+    <parameters/>
+    <output>
+      <quadtree order="3">
+        <gray x="512" y="512">
+          <white/>
+          <white/>
+          <gray x="256" y="256">
+            <white/>
+            <gray x="384" y="384">
+              <white/>
+              <gray x="448" y="448">
+                <white/>
+                <white/>
+                <black cardinality="4">
+                  <city color="black" name="City1" radius="5" x="400" y="400"/>
+                  <road end="City8" start="City1"/>
+                  <road end="City4" start="City1"/>
+                  <road end="City2" start="City1"/>
+                </black>
+                <black cardinality="2">
+                  <city color="black" name="City2" radius="5" x="500" y="400"/>
+                  <road end="City2" start="City1"/>
+                </black>
+              </gray>
+              <white/>
+              <black cardinality="3">
+                <city color="black" name="City4" radius="5" x="400" y="300"/>
+                <road end="City8" start="City1"/>
+                <road end="City4" start="City1"/>
+              </black>
+            </gray>
+            <white/>
+            <black cardinality="2">
+              <city color="black" name="City8" radius="5" x="500" y="200"/>
+              <road end="City8" start="City1"/>
+            </black>
+          </gray>
+          <white/>
+        </gray>
+      </quadtree>
+    </output>
+  </success>
+  <success>
+    <command name="clearAll"/>
+    <parameters/>
+    <output/>
+  </success>
+  <error type="roadNotFound">
+    <command name="nearestRoad"/>
+    <parameters>
+      <x value="200"/>
+      <y value="200"/>
+    </parameters>
+  </error>
+  <error type="cityNotFound">
+    <command name="nearestCity"/>
+    <parameters>
+      <x value="300"/>
+      <y value="300"/>
+    </parameters>
+  </error>
+  <error type="cityNotFound">
+    <command name="nearestIsolatedCity"/>
+    <parameters>
+      <x value="400"/>
+      <y value="400"/>
+    </parameters>
+  </error>
+</results>

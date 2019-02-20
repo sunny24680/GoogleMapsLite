@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="Baltimore"/>
+      <x value="128"/>
+      <y value="128"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="B"/>
+      <x value="256"/>
+      <y value="256"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="C"/>
+      <x value="258"/>
+      <y value="258"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="D"/>
+      <x value="540"/>
+      <y value="540"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="E"/>
+      <x value="130"/>
+      <y value="300"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="F"/>
+      <x value="130"/>
+      <y value="130"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="G"/>
+      <x value="0"/>
+      <y value="600"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="H"/>
+      <x value="1"/>
+      <y value="512"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="mapCity"/>
+    <parameters>
+      <name value="B"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="Baltimore"/>
+      <end value="C"/>
+    </parameters>
+    <output>
+      <roadCreated end="C" start="Baltimore"/>
+    </output>
+  </success>
+  <error type="startOrEndIsIsolated">
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="C"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="Baltimore"/>
+    </parameters>
+    <output>
+      <roadCreated end="Baltimore" start="D"/>
+    </output>
+  </success>
+  <error type="cityOutOfBounds">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="D"/>
+    </parameters>
+  </error>
+  <error type="startOrEndIsIsolated">
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="B"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="C"/>
+    </parameters>
+    <output>
+      <roadCreated end="C" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapCity"/>
+    <parameters>
+      <name value="F"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="cityOutOfBounds">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="G"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="G"/>
+      <end value="Baltimore"/>
+    </parameters>
+    <output>
+      <roadCreated end="Baltimore" start="G"/>
+    </output>
+  </success>
+  <error type="cityOutOfBounds">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="G"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="mapCity"/>
+    <parameters>
+      <name value="H"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="rangeCities"/>
+    <parameters>
+      <x value="128"/>
+      <y value="128"/>
+      <radius value="5"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="F" radius="0" x="130" y="130"/>
+        <city color="black" name="Baltimore" radius="0" x="128" y="128"/>
+      </cityList>
+    </output>
+  </success>
+  <success>
+    <command name="rangeCities"/>
+    <parameters>
+      <x value="128"/>
+      <y value="128"/>
+      <radius value="0"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="Baltimore" radius="0" x="128" y="128"/>
+      </cityList>
+    </output>
+  </success>
+  <success>
+    <command name="rangeCities"/>
+    <parameters>
+      <x value="128"/>
+      <y value="128"/>
+      <radius value="500"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="H" radius="0" x="1" y="512"/>
+        <city color="black" name="F" radius="0" x="130" y="130"/>
+        <city color="black" name="E" radius="0" x="130" y="300"/>
+        <city color="black" name="C" radius="0" x="258" y="258"/>
+        <city color="black" name="Baltimore" radius="0" x="128" y="128"/>
+        <city color="black" name="B" radius="0" x="256" y="256"/>
+      </cityList>
+    </output>
+  </success>
+  <success>
+    <command id="7" name="printPMQuadtree"/>
+    <parameters/>
+    <output>
+      <quadtree order="3">
+        <gray x="256" y="256">
+          <gray x="128" y="384">
+            <black cardinality="2">
+              <isolatedCity color="black" name="H" radius="0" x="1" y="512"/>
+              <road end="G" start="Baltimore"/>
+            </black>
+            <white/>
+            <black cardinality="1">
+              <road end="G" start="Baltimore"/>
+            </black>
+            <gray x="192" y="320">
+              <white/>
+              <white/>
+              <black cardinality="2">
+                <city color="black" name="E" radius="0" x="130" y="300"/>
+                <road end="E" start="C"/>
+              </black>
+              <black cardinality="4">
+                <isolatedCity color="black" name="B" radius="0" x="256" y="256"/>
+                <road end="E" start="C"/>
+                <road end="D" start="Baltimore"/>
+                <road end="C" start="Baltimore"/>
+              </black>
+            </gray>
+          </gray>
+          <gray x="384" y="384">
+            <black cardinality="1">
+              <road end="D" start="Baltimore"/>
+            </black>
+            <black cardinality="1">
+              <road end="D" start="Baltimore"/>
+            </black>
+            <gray x="320" y="320">
+              <black cardinality="1">
+                <road end="D" start="Baltimore"/>
+              </black>
+              <black cardinality="1">
+                <road end="D" start="Baltimore"/>
+              </black>
+              <gray x="288" y="288">
+                <black cardinality="1">
+                  <road end="D" start="Baltimore"/>
+                </black>
+                <black cardinality="1">
+                  <road end="D" start="Baltimore"/>
+                </black>
+                <gray x="272" y="272">
+                  <black cardinality="1">
+                    <road end="D" start="Baltimore"/>
+                  </black>
+                  <black cardinality="1">
+                    <road end="D" start="Baltimore"/>
+                  </black>
+                  <gray x="264" y="264">
+                    <black cardinality="1">
+                      <road end="D" start="Baltimore"/>
+                    </black>
+                    <black cardinality="1">
+                      <road end="D" start="Baltimore"/>
+                    </black>
+                    <gray x="260" y="260">
+                      <black cardinality="1">
+                        <road end="D" start="Baltimore"/>
+                      </black>
+                      <black cardinality="1">
+                        <road end="D" start="Baltimore"/>
+                      </black>
+                      <gray x="258" y="258">
+                        <black cardinality="4">
+                          <city color="black" name="C" radius="0" x="258" y="258"/>
+                          <road end="E" start="C"/>
+                          <road end="D" start="Baltimore"/>
+                          <road end="C" start="Baltimore"/>
+                        </black>
+                        <black cardinality="4">
+                          <city color="black" name="C" radius="0" x="258" y="258"/>
+                          <road end="E" start="C"/>
+                          <road end="D" start="Baltimore"/>
+                          <road end="C" start="Baltimore"/>
+                        </black>
+                        <gray x="257" y="257">
+                          <black cardinality="2">
+                            <road end="D" start="Baltimore"/>
+                            <road end="C" start="Baltimore"/>
+                          </black>
+                          <black cardinality="4">
+                            <city color="black" name="C" radius="0" x="258" y="258"/>
+                            <road end="E" start="C"/>
+                            <road end="D" start="Baltimore"/>
+                            <road end="C" start="Baltimore"/>
+                          </black>
+                          <black cardinality="3">
+                            <isolatedCity color="black" name="B" radius="0" x="256" y="256"/>
+                            <road end="D" start="Baltimore"/>
+                            <road end="C" start="Baltimore"/>
+                          </black>
+                          <black cardinality="2">
+                            <road end="D" start="Baltimore"/>
+                            <road end="C" start="Baltimore"/>
+                          </black>
+                        </gray>
+                        <black cardinality="4">
+                          <city color="black" name="C" radius="0" x="258" y="258"/>
+                          <road end="E" start="C"/>
+                          <road end="D" start="Baltimore"/>
+                          <road end="C" start="Baltimore"/>
+                        </black>
+                      </gray>
+                      <black cardinality="1">
+                        <road end="D" start="Baltimore"/>
+                      </black>
+                    </gray>
+                    <black cardinality="1">
+                      <road end="D" start="Baltimore"/>
+                    </black>
+                  </gray>
+                  <black cardinality="1">
+                    <road end="D" start="Baltimore"/>
+                  </black>
+                </gray>
+                <black cardinality="1">
+                  <road end="D" start="Baltimore"/>
+                </black>
+              </gray>
+              <black cardinality="1">
+                <road end="D" start="Baltimore"/>
+              </black>
+            </gray>
+            <black cardinality="1">
+              <road end="D" start="Baltimore"/>
+            </black>
+          </gray>
+          <gray x="128" y="128">
+            <black cardinality="4">
+              <city color="black" name="Baltimore" radius="0" x="128" y="128"/>
+              <road end="G" start="Baltimore"/>
+              <road end="D" start="Baltimore"/>
+              <road end="C" start="Baltimore"/>
+            </black>
+            <gray x="192" y="192">
+              <black cardinality="2">
+                <road end="D" start="Baltimore"/>
+                <road end="C" start="Baltimore"/>
+              </black>
+              <black cardinality="3">
+                <isolatedCity color="black" name="B" radius="0" x="256" y="256"/>
+                <road end="D" start="Baltimore"/>
+                <road end="C" start="Baltimore"/>
+              </black>
+              <gray x="160" y="160">
+                <black cardinality="2">
+                  <road end="D" start="Baltimore"/>
+                  <road end="C" start="Baltimore"/>
+                </black>
+                <black cardinality="2">
+                  <road end="D" start="Baltimore"/>
+                  <road end="C" start="Baltimore"/>
+                </black>
+                <gray x="144" y="144">
+                  <black cardinality="2">
+                    <road end="D" start="Baltimore"/>
+                    <road end="C" start="Baltimore"/>
+                  </black>
+                  <black cardinality="2">
+                    <road end="D" start="Baltimore"/>
+                    <road end="C" start="Baltimore"/>
+                  </black>
+                  <gray x="136" y="136">
+                    <black cardinality="2">
+                      <road end="D" start="Baltimore"/>
+                      <road end="C" start="Baltimore"/>
+                    </black>
+                    <black cardinality="2">
+                      <road end="D" start="Baltimore"/>
+                      <road end="C" start="Baltimore"/>
+                    </black>
+                    <gray x="132" y="132">
+                      <black cardinality="2">
+                        <road end="D" start="Baltimore"/>
+                        <road end="C" start="Baltimore"/>
+                      </black>
+                      <black cardinality="2">
+                        <road end="D" start="Baltimore"/>
+                        <road end="C" start="Baltimore"/>
+                      </black>
+                      <gray x="130" y="130">
+                        <black cardinality="3">
+                          <isolatedCity color="black" name="F" radius="0" x="130" y="130"/>
+                          <road end="D" start="Baltimore"/>
+                          <road end="C" start="Baltimore"/>
+                        </black>
+                        <black cardinality="3">
+                          <isolatedCity color="black" name="F" radius="0" x="130" y="130"/>
+                          <road end="D" start="Baltimore"/>
+                          <road end="C" start="Baltimore"/>
+                        </black>
+                        <gray x="129" y="129">
+                          <black cardinality="2">
+                            <road end="D" start="Baltimore"/>
+                            <road end="C" start="Baltimore"/>
+                          </black>
+                          <black cardinality="3">
+                            <isolatedCity color="black" name="F" radius="0" x="130" y="130"/>
+                            <road end="D" start="Baltimore"/>
+                            <road end="C" start="Baltimore"/>
+                          </black>
+                          <black cardinality="4">
+                            <city color="black" name="Baltimore" radius="0" x="128" y="128"/>
+                            <road end="G" start="Baltimore"/>
+                            <road end="D" start="Baltimore"/>
+                            <road end="C" start="Baltimore"/>
+                          </black>
+                          <black cardinality="2">
+                            <road end="D" start="Baltimore"/>
+                            <road end="C" start="Baltimore"/>
+                          </black>
+                        </gray>
+                        <black cardinality="3">
+                          <isolatedCity color="black" name="F" radius="0" x="130" y="130"/>
+                          <road end="D" start="Baltimore"/>
+                          <road end="C" start="Baltimore"/>
+                        </black>
+                      </gray>
+                      <black cardinality="2">
+                        <road end="D" start="Baltimore"/>
+                        <road end="C" start="Baltimore"/>
+                      </black>
+                    </gray>
+                    <black cardinality="2">
+                      <road end="D" start="Baltimore"/>
+                      <road end="C" start="Baltimore"/>
+                    </black>
+                  </gray>
+                  <black cardinality="2">
+                    <road end="D" start="Baltimore"/>
+                    <road end="C" start="Baltimore"/>
+                  </black>
+                </gray>
+                <black cardinality="2">
+                  <road end="D" start="Baltimore"/>
+                  <road end="C" start="Baltimore"/>
+                </black>
+              </gray>
+              <black cardinality="2">
+                <road end="D" start="Baltimore"/>
+                <road end="C" start="Baltimore"/>
+              </black>
+            </gray>
+            <black cardinality="4">
+              <city color="black" name="Baltimore" radius="0" x="128" y="128"/>
+              <road end="G" start="Baltimore"/>
+              <road end="D" start="Baltimore"/>
+              <road end="C" start="Baltimore"/>
+            </black>
+            <black cardinality="4">
+              <city color="black" name="Baltimore" radius="0" x="128" y="128"/>
+              <road end="G" start="Baltimore"/>
+              <road end="D" start="Baltimore"/>
+              <road end="C" start="Baltimore"/>
+            </black>
+          </gray>
+          <black cardinality="3">
+            <isolatedCity color="black" name="B" radius="0" x="256" y="256"/>
+            <road end="D" start="Baltimore"/>
+            <road end="C" start="Baltimore"/>
+          </black>
+        </gray>
+      </quadtree>
+    </output>
+  </success>
+  <success>
+    <command id="7" name="listCities"/>
+    <parameters>
+      <sortBy value="coordinate"/>
+    </parameters>
+    <output>
+      <cityList>
+        <city color="black" name="Baltimore" radius="0" x="128" y="128"/>
+        <city color="black" name="F" radius="0" x="130" y="130"/>
+        <city color="black" name="B" radius="0" x="256" y="256"/>
+        <city color="black" name="C" radius="0" x="258" y="258"/>
+        <city color="black" name="E" radius="0" x="130" y="300"/>
+        <city color="black" name="H" radius="0" x="1" y="512"/>
+        <city color="black" name="D" radius="0" x="540" y="540"/>
+        <city color="black" name="G" radius="0" x="0" y="600"/>
+      </cityList>
+    </output>
+  </success>
+</results>

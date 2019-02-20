@@ -7,7 +7,7 @@ import cmsc420.geom.Geometry2D;
 
 //As of Part 0 City is immutable
 @SuppressWarnings("serial")
-public class City extends Point2D.Float implements Geometry2D{
+public class City extends Point2D.Float implements Geometry2D, Comparable<City>{
 
 	private int radius;
 	private String color, name;
@@ -46,6 +46,10 @@ public class City extends Point2D.Float implements Geometry2D{
 		return isolated;
 	}
 	
+	public void changeToIsolated() {
+		isolated = true;
+	}
+	
 	public Point2D toPoint2D() {
 		return new Point2D.Float((float) this.getX(), (float) this.getY());		
 	}
@@ -56,21 +60,22 @@ public class City extends Point2D.Float implements Geometry2D{
 		return dis;
 	}
 	
+	public double distanceTo(Road road) {
+		return road.ptSegDist(this);
+	}
+	
 	public int compareName(City other) {
 		return -name.compareTo(other.getName());
 	}
 	
-	public boolean equals(City obj) {
-		if ((obj.x == x) && (obj.y == y)) {
-			//System.out.println("Same position on the Map");
-			if (obj.getName().equals(name) && obj.getRadius() == radius)
-				return true;
-			else {
-				//System.out.println("Different name or radius");
-				return false;
-			}
-		} else 
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null || !(obj instanceof City))
 			return false;
+		City other = (City) obj;
+		return super.equals(other) && name.equals(other.getName()) && getX()==other.getX() && getY()==other.getY() && getRadius()==other.getRadius() && getColor().equals(other.getColor());
 	}
 	
 	@Override
@@ -79,7 +84,7 @@ public class City extends Point2D.Float implements Geometry2D{
 	}
 	
 	public String toString() {
-		return name+" @ "+super.toString();
+		return "("+(int) super.getX()+","+(int) super.getY()+")";
 	}
 	
 	public static class nameComparator implements Comparator<String>{
@@ -87,6 +92,14 @@ public class City extends Point2D.Float implements Geometry2D{
 		public int compare(String o1, String o2) {
 			//returns reverse asciibetically
 			return -o1.compareTo(o2);
+		}
+	}
+	
+	public static class cityNameComparator implements Comparator<City>{
+		@Override
+		public int compare(City o1, City o2) {
+			//returns reverse asciibetically
+			return o1.compareName(o2);
 		}
 	}
 	
@@ -108,6 +121,11 @@ public class City extends Point2D.Float implements Geometry2D{
 					return 0;
 			}
 		}
+	}
+
+	@Override
+	public int compareTo(City o) {
+		return ((City) o).getName().compareTo(getName());
 	}
 
 }

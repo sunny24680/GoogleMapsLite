@@ -1,0 +1,38 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part2in.xsd"
+	pmOrder="3" 
+	spatialWidth="512" 
+	spatialHeight="512" 
+	g="3">
+
+ 	<mapRoad start="A1" end="A2"/>
+ 	<mapRoad start="A1" end="A4"/>
+ 	<mapRoad start="A1" end="A5"/>
+ 	<mapRoad start="A1" end="A6"/>
+
+ 	<createCity name="A1" x="0" y="0" radius="0" color="black"/>
+ 	<createCity name="A2" x="0" y="512" radius="0" color="black"/>
+ 	<createCity name="A3" x="512" y="512" radius="0" color="black"/>
+ 	<createCity name="A4" x="512" y="0" radius="0" color="black"/>
+ 	<createCity name="A5" x="600" y="400" radius="0" color="black"/>
+ 	<createCity name="A6" x="400" y="600" radius="0" color="black"/>
+ 	<createCity name="A7" x="-50" y="105" radius="0" color="black"/>
+ 	<createCity name="A8" x="100" y="105" radius="0" color="black"/>
+ 	<createCity name="A9" x="256" y="400" radius="0" color="black"/>
+ 	<createCity name="A10" x="450" y="256" radius="0" color="black"/>
+
+ 	<mapRoad start="A1" end="A2"/>
+ 	<mapRoad start="A1" end="A4"/>
+ 	<mapRoad start="A3" end="A2"/>
+ 	<mapRoad start="A3" end="A4"/>
+ 	<mapRoad start="A5" end="A6"/>
+ 	<mapRoad start="A7" end="A8"/>
+ 	<mapRoad start="A10" end="A9"/>
+
+ 	<rangeRoads x="50" y="50" radius="10" />
+ 	<rangeRoads x="256" y="256" radius="256"/>
+ 	<rangeRoads x="0" y="0" radius="0" />
+ 	<rangeRoads x="512" y="512" radius="20" />
+
+</commands>

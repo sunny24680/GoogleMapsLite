@@ -1,0 +1,90 @@
+<commands
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="part2in.xsd"
+  pmOrder="3" g="1" spatialWidth="1024" spatialHeight="1024">
+
+ <createCity id="1"  name="City1" y="80" x="170" radius="5" color="black"/>
+ <createCity id="2"  name="City2" y="300" x="730" radius="7" color="black"/>
+ <createCity id="3"  name="City3" y="920" x="360" radius="8" color="black"/>
+ <createCity id="4"  name="City4" y="620" x="550" radius="4" color="black"/>
+
+ <createCity id="5" name="City1" y="30" x="200" radius="5" color="black"/>
+ <createCity id="6" name="City5" y="200" x="200" radius="5" color="black"/>
+ <createCity id="7" name="City2" y="620" x="550" radius="5" color="black"/>
+
+ <clearAll id="8"/>
+ <listCities id="9" sortBy="name"/>
+ <listCities id="10" sortBy="coordinate"/>
+
+ <createCity id="11"  name="City1" y="80" x="170" radius="5" color="black"/>
+ <createCity id="12"  name="City2" y="300" x="730" radius="7" color="black"/>
+ <createCity id="13"  name="City3" y="920" x="360" radius="8" color="black"/>
+ <createCity id="14"  name="City4" y="620" x="550" radius="4" color="black"/>
+ <createCity name="City5" y="430" x="280" radius="5" color="black"/>
+
+ <listCities id="15" sortBy="name"/>
+ <listCities id="16" sortBy="coordinate"/>
+ <listCities sortBy="name"/>
+
+ <mapRoad id="18" start="City10" end="City1"/>
+ <mapRoad id="19" start="City2" end="City7"/>
+ <mapRoad id="20" start="City3" end="City3"/>
+
+ <mapCity name="City10"/>
+ <mapCity id="21" name="City1"/>
+ <mapCity name="City1"/>
+ <createCity name="City6" y="2000" x="2000" radius="5" color="black"/>
+ <mapCity name="City6"/>
+
+ <mapRoad start="City1" end="City2"/>
+ <mapRoad start="City3" end="City4"/>
+ <mapRoad start="City3" end="City4"/>
+ <mapRoad id="22" start="City4" end="City6"/>
+
+ <printPMQuadtree id="23"/>
+
+ <clearAll/>
+
+ <clearAll id="24"/>
+
+ <createCity name="City1" y="400" x="400" radius="5" color="black"/>
+ <createCity name="City2" y="400" x="500" radius="5" color="black"/>
+ <createCity name="City3" y="400" x="600" radius="5" color="black"/>
+ <createCity name="City4" y="300" x="400" radius="5" color="black"/>
+ <createCity name="City5" y="300" x="500" radius="5" color="black"/>
+ <createCity name="City6" y="300" x="600" radius="5" color="black"/>
+ <createCity name="City7" y="200" x="400" radius="5" color="black"/>
+ <createCity name="City8" y="200" x="500" radius="5" color="black"/>
+ <createCity name="City9" y="200" x="600" radius="5" color="black"/> 
+
+ <mapRoad start="City1" end="City2"/>
+ <mapRoad start="City1" end="City4"/>
+ <mapRoad start="City8" end="City1"/>
+
+ <printPMQuadtree id="23"/>
+
+
+ <rangeCities id="25" x="350" y="450" radius="100"/>
+ <rangeCities x="250" y="550" radius="200"/>
+ <rangeCities x="800" y="800" radius="10"/>
+ <rangeRoads x="250" y="450" radius="150"/>
+ <rangeRoads x="900" y="900" radius="10"/>
+ <nearestCity x="330" y="440"/>
+ <nearestCity id="26" x="480" y="230"/>
+ <nearestIsolatedCity x="470" y="310"/>
+ <nearestIsolatedCity id="27" x="390" y="550"/>
+ <nearestRoad x="500" y="300"/>
+ <nearestRoad id="28" x="100" y="400"/>
+ <nearestCityToRoad id="29" start="City1" end="City2"/>
+ <nearestCityToRoad start="City8" end="City12"/>
+ <shortestPath id="29" start="City12" end="City13"/>
+ <shortestPath start="City1" end="City30"/>
+ <shortestPath start="City1" end="City9"/>
+ <shortestPath id="30" start="City8" end="City2"/>
+ <printPMQuadtree/>
+ <clearAll/>
+ <nearestRoad x="200" y="200"/>
+ <nearestCity x="300" y="300"/>
+ <nearestIsolatedCity x="400" y="400"/>
+
+</commands>

@@ -1,0 +1,2468 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="A"/>
+      <x value="5"/>
+      <y value="5"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="B"/>
+      <x value="6"/>
+      <y value="6"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="C"/>
+      <x value="5"/>
+      <y value="4"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="D"/>
+      <x value="5"/>
+      <y value="6"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="E"/>
+      <x value="4"/>
+      <y value="5"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="F"/>
+      <x value="6"/>
+      <y value="5"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="G"/>
+      <x value="4"/>
+      <y value="4"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="H"/>
+      <x value="4"/>
+      <y value="3"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="I"/>
+      <x value="33"/>
+      <y value="33"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="J"/>
+      <x value="34"/>
+      <y value="33"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="K"/>
+      <x value="35"/>
+      <y value="33"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="L"/>
+      <x value="36"/>
+      <y value="33"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="M"/>
+      <x value="37"/>
+      <y value="33"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="N"/>
+      <x value="38"/>
+      <y value="33"/>
+      <radius value="0"/>
+      <color value="black"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="startEqualsEnd">
+    <command id="1" name="mapRoad"/>
+    <parameters>
+      <start value="A"/>
+      <end value="A"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="A"/>
+    </parameters>
+    <output>
+      <roadCreated end="A" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="A"/>
+    </parameters>
+    <output>
+      <roadCreated end="A" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="A"/>
+    </parameters>
+    <output>
+      <roadCreated end="A" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="A"/>
+    </parameters>
+    <output>
+      <roadCreated end="A" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="F"/>
+      <end value="A"/>
+    </parameters>
+    <output>
+      <roadCreated end="A" start="F"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="G"/>
+      <end value="A"/>
+    </parameters>
+    <output>
+      <roadCreated end="A" start="G"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="H"/>
+      <end value="A"/>
+    </parameters>
+    <output>
+      <roadCreated end="A" start="H"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="H"/>
+      <end value="B"/>
+    </parameters>
+    <output>
+      <roadCreated end="B" start="H"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="C"/>
+    </parameters>
+    <output>
+      <roadCreated end="C" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="D"/>
+    </parameters>
+    <output>
+      <roadCreated end="D" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="E"/>
+    </parameters>
+    <output>
+      <roadCreated end="E" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="F"/>
+    </parameters>
+    <output>
+      <roadCreated end="F" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="G"/>
+    </parameters>
+    <output>
+      <roadCreated end="G" start="B"/>
+    </output>
+  </success>
+  <error type="roadAlreadyMapped">
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="H"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="D"/>
+    </parameters>
+    <output>
+      <roadCreated end="D" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="E"/>
+    </parameters>
+    <output>
+      <roadCreated end="E" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="F"/>
+    </parameters>
+    <output>
+      <roadCreated end="F" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="G"/>
+    </parameters>
+    <output>
+      <roadCreated end="G" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="H"/>
+    </parameters>
+    <output>
+      <roadCreated end="H" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="E"/>
+    </parameters>
+    <output>
+      <roadCreated end="E" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="F"/>
+    </parameters>
+    <output>
+      <roadCreated end="F" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="G"/>
+    </parameters>
+    <output>
+      <roadCreated end="G" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="H"/>
+    </parameters>
+    <output>
+      <roadCreated end="H" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="F"/>
+    </parameters>
+    <output>
+      <roadCreated end="F" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="G"/>
+    </parameters>
+    <output>
+      <roadCreated end="G" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="H"/>
+    </parameters>
+    <output>
+      <roadCreated end="H" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="F"/>
+      <end value="G"/>
+    </parameters>
+    <output>
+      <roadCreated end="G" start="F"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="F"/>
+      <end value="H"/>
+    </parameters>
+    <output>
+      <roadCreated end="H" start="F"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="G"/>
+      <end value="H"/>
+    </parameters>
+    <output>
+      <roadCreated end="H" start="G"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="A"/>
+      <end value="I"/>
+    </parameters>
+    <output>
+      <roadCreated end="I" start="A"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="A"/>
+      <end value="J"/>
+    </parameters>
+    <output>
+      <roadCreated end="J" start="A"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="A"/>
+      <end value="K"/>
+    </parameters>
+    <output>
+      <roadCreated end="K" start="A"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="A"/>
+      <end value="L"/>
+    </parameters>
+    <output>
+      <roadCreated end="L" start="A"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="A"/>
+      <end value="M"/>
+    </parameters>
+    <output>
+      <roadCreated end="M" start="A"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="A"/>
+      <end value="N"/>
+    </parameters>
+    <output>
+      <roadCreated end="N" start="A"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="I"/>
+    </parameters>
+    <output>
+      <roadCreated end="I" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="J"/>
+    </parameters>
+    <output>
+      <roadCreated end="J" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="K"/>
+    </parameters>
+    <output>
+      <roadCreated end="K" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="L"/>
+    </parameters>
+    <output>
+      <roadCreated end="L" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="M"/>
+    </parameters>
+    <output>
+      <roadCreated end="M" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="B"/>
+      <end value="N"/>
+    </parameters>
+    <output>
+      <roadCreated end="N" start="B"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="I"/>
+    </parameters>
+    <output>
+      <roadCreated end="I" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="J"/>
+    </parameters>
+    <output>
+      <roadCreated end="J" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="K"/>
+    </parameters>
+    <output>
+      <roadCreated end="K" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="L"/>
+    </parameters>
+    <output>
+      <roadCreated end="L" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="M"/>
+    </parameters>
+    <output>
+      <roadCreated end="M" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="C"/>
+      <end value="N"/>
+    </parameters>
+    <output>
+      <roadCreated end="N" start="C"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="I"/>
+    </parameters>
+    <output>
+      <roadCreated end="I" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="J"/>
+    </parameters>
+    <output>
+      <roadCreated end="J" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="K"/>
+    </parameters>
+    <output>
+      <roadCreated end="K" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="L"/>
+    </parameters>
+    <output>
+      <roadCreated end="L" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="M"/>
+    </parameters>
+    <output>
+      <roadCreated end="M" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="D"/>
+      <end value="N"/>
+    </parameters>
+    <output>
+      <roadCreated end="N" start="D"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="I"/>
+    </parameters>
+    <output>
+      <roadCreated end="I" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="J"/>
+    </parameters>
+    <output>
+      <roadCreated end="J" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="K"/>
+    </parameters>
+    <output>
+      <roadCreated end="K" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="L"/>
+    </parameters>
+    <output>
+      <roadCreated end="L" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="M"/>
+    </parameters>
+    <output>
+      <roadCreated end="M" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="E"/>
+      <end value="N"/>
+    </parameters>
+    <output>
+      <roadCreated end="N" start="E"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="F"/>
+      <end value="I"/>
+    </parameters>
+    <output>
+      <roadCreated end="I" start="F"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="F"/>
+      <end value="J"/>
+    </parameters>
+    <output>
+      <roadCreated end="J" start="F"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="F"/>
+      <end value="K"/>
+    </parameters>
+    <output>
+      <roadCreated end="K" start="F"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="F"/>
+      <end value="L"/>
+    </parameters>
+    <output>
+      <roadCreated end="L" start="F"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="F"/>
+      <end value="M"/>
+    </parameters>
+    <output>
+      <roadCreated end="M" start="F"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="F"/>
+      <end value="N"/>
+    </parameters>
+    <output>
+      <roadCreated end="N" start="F"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="G"/>
+      <end value="I"/>
+    </parameters>
+    <output>
+      <roadCreated end="I" start="G"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="G"/>
+      <end value="J"/>
+    </parameters>
+    <output>
+      <roadCreated end="J" start="G"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="G"/>
+      <end value="K"/>
+    </parameters>
+    <output>
+      <roadCreated end="K" start="G"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="G"/>
+      <end value="L"/>
+    </parameters>
+    <output>
+      <roadCreated end="L" start="G"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="G"/>
+      <end value="M"/>
+    </parameters>
+    <output>
+      <roadCreated end="M" start="G"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="G"/>
+      <end value="N"/>
+    </parameters>
+    <output>
+      <roadCreated end="N" start="G"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="H"/>
+      <end value="I"/>
+    </parameters>
+    <output>
+      <roadCreated end="I" start="H"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="H"/>
+      <end value="J"/>
+    </parameters>
+    <output>
+      <roadCreated end="J" start="H"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="H"/>
+      <end value="K"/>
+    </parameters>
+    <output>
+      <roadCreated end="K" start="H"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="H"/>
+      <end value="L"/>
+    </parameters>
+    <output>
+      <roadCreated end="L" start="H"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="H"/>
+      <end value="M"/>
+    </parameters>
+    <output>
+      <roadCreated end="M" start="H"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="H"/>
+      <end value="N"/>
+    </parameters>
+    <output>
+      <roadCreated end="N" start="H"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="I"/>
+      <end value="J"/>
+    </parameters>
+    <output>
+      <roadCreated end="J" start="I"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="J"/>
+      <end value="K"/>
+    </parameters>
+    <output>
+      <roadCreated end="K" start="J"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="K"/>
+      <end value="L"/>
+    </parameters>
+    <output>
+      <roadCreated end="L" start="K"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="L"/>
+      <end value="M"/>
+    </parameters>
+    <output>
+      <roadCreated end="M" start="L"/>
+    </output>
+  </success>
+  <success>
+    <command name="mapRoad"/>
+    <parameters>
+      <start value="M"/>
+      <end value="N"/>
+    </parameters>
+    <output>
+      <roadCreated end="N" start="M"/>
+    </output>
+  </success>
+  <success>
+    <command name="rangeRoads"/>
+    <parameters>
+      <x value="5"/>
+      <y value="5"/>
+      <radius value="4"/>
+    </parameters>
+    <output>
+      <roadList>
+        <road end="N" start="H"/>
+        <road end="M" start="H"/>
+        <road end="L" start="H"/>
+        <road end="K" start="H"/>
+        <road end="J" start="H"/>
+        <road end="I" start="H"/>
+        <road end="N" start="G"/>
+        <road end="M" start="G"/>
+        <road end="L" start="G"/>
+        <road end="K" start="G"/>
+        <road end="J" start="G"/>
+        <road end="I" start="G"/>
+        <road end="H" start="G"/>
+        <road end="N" start="F"/>
+        <road end="M" start="F"/>
+        <road end="L" start="F"/>
+        <road end="K" start="F"/>
+        <road end="J" start="F"/>
+        <road end="I" start="F"/>
+        <road end="H" start="F"/>
+        <road end="G" start="F"/>
+        <road end="N" start="E"/>
+        <road end="M" start="E"/>
+        <road end="L" start="E"/>
+        <road end="K" start="E"/>
+        <road end="J" start="E"/>
+        <road end="I" start="E"/>
+        <road end="H" start="E"/>
+        <road end="G" start="E"/>
+        <road end="F" start="E"/>
+        <road end="N" start="D"/>
+        <road end="M" start="D"/>
+        <road end="L" start="D"/>
+        <road end="K" start="D"/>
+        <road end="J" start="D"/>
+        <road end="I" start="D"/>
+        <road end="H" start="D"/>
+        <road end="G" start="D"/>
+        <road end="F" start="D"/>
+        <road end="E" start="D"/>
+        <road end="N" start="C"/>
+        <road end="M" start="C"/>
+        <road end="L" start="C"/>
+        <road end="K" start="C"/>
+        <road end="J" start="C"/>
+        <road end="I" start="C"/>
+        <road end="H" start="C"/>
+        <road end="G" start="C"/>
+        <road end="F" start="C"/>
+        <road end="E" start="C"/>
+        <road end="D" start="C"/>
+        <road end="N" start="B"/>
+        <road end="M" start="B"/>
+        <road end="L" start="B"/>
+        <road end="K" start="B"/>
+        <road end="J" start="B"/>
+        <road end="I" start="B"/>
+        <road end="H" start="B"/>
+        <road end="G" start="B"/>
+        <road end="F" start="B"/>
+        <road end="E" start="B"/>
+        <road end="D" start="B"/>
+        <road end="C" start="B"/>
+        <road end="N" start="A"/>
+        <road end="M" start="A"/>
+        <road end="L" start="A"/>
+        <road end="K" start="A"/>
+        <road end="J" start="A"/>
+        <road end="I" start="A"/>
+        <road end="H" start="A"/>
+        <road end="G" start="A"/>
+        <road end="F" start="A"/>
+        <road end="E" start="A"/>
+        <road end="D" start="A"/>
+        <road end="C" start="A"/>
+        <road end="B" start="A"/>
+      </roadList>
+    </output>
+  </success>
+  <success>
+    <command name="printPMQuadtree"/>
+    <parameters/>
+    <output>
+      <quadtree order="3">
+        <gray x="32" y="32">
+          <black cardinality="5">
+            <road end="I" start="G"/>
+            <road end="I" start="E"/>
+            <road end="I" start="D"/>
+            <road end="I" start="B"/>
+            <road end="I" start="A"/>
+          </black>
+          <gray x="48" y="48">
+            <white/>
+            <white/>
+            <gray x="40" y="40">
+              <white/>
+              <white/>
+              <gray x="36" y="36">
+                <white/>
+                <white/>
+                <gray x="34" y="34">
+                  <white/>
+                  <white/>
+                  <gray x="33" y="33">
+                    <black cardinality="10">
+                      <city color="black" name="I" radius="0" x="33" y="33"/>
+                      <road end="J" start="I"/>
+                      <road end="I" start="H"/>
+                      <road end="I" start="G"/>
+                      <road end="I" start="F"/>
+                      <road end="I" start="E"/>
+                      <road end="I" start="D"/>
+                      <road end="I" start="C"/>
+                      <road end="I" start="B"/>
+                      <road end="I" start="A"/>
+                    </black>
+                    <gray x="33" y="33">
+                      <black cardinality="10">
+                        <city color="black" name="I" radius="0" x="33" y="33"/>
+                        <road end="J" start="I"/>
+                        <road end="I" start="H"/>
+                        <road end="I" start="G"/>
+                        <road end="I" start="F"/>
+                        <road end="I" start="E"/>
+                        <road end="I" start="D"/>
+                        <road end="I" start="C"/>
+                        <road end="I" start="B"/>
+                        <road end="I" start="A"/>
+                      </black>
+                      <black cardinality="10">
+                        <city color="black" name="I" radius="0" x="33" y="33"/>
+                        <road end="J" start="I"/>
+                        <road end="I" start="H"/>
+                        <road end="I" start="G"/>
+                        <road end="I" start="F"/>
+                        <road end="I" start="E"/>
+                        <road end="I" start="D"/>
+                        <road end="I" start="C"/>
+                        <road end="I" start="B"/>
+                        <road end="I" start="A"/>
+                      </black>
+                      <black cardinality="10">
+                        <city color="black" name="I" radius="0" x="33" y="33"/>
+                        <road end="J" start="I"/>
+                        <road end="I" start="H"/>
+                        <road end="I" start="G"/>
+                        <road end="I" start="F"/>
+                        <road end="I" start="E"/>
+                        <road end="I" start="D"/>
+                        <road end="I" start="C"/>
+                        <road end="I" start="B"/>
+                        <road end="I" start="A"/>
+                      </black>
+                      <black cardinality="10">
+                        <city color="black" name="I" radius="0" x="33" y="33"/>
+                        <road end="J" start="I"/>
+                        <road end="I" start="H"/>
+                        <road end="I" start="G"/>
+                        <road end="I" start="F"/>
+                        <road end="I" start="E"/>
+                        <road end="I" start="D"/>
+                        <road end="I" start="C"/>
+                        <road end="I" start="B"/>
+                        <road end="I" start="A"/>
+                      </black>
+                    </gray>
+                    <black cardinality="18">
+                      <city color="black" name="I" radius="0" x="33" y="33"/>
+                      <road end="J" start="I"/>
+                      <road end="J" start="H"/>
+                      <road end="I" start="H"/>
+                      <road end="J" start="G"/>
+                      <road end="I" start="G"/>
+                      <road end="J" start="F"/>
+                      <road end="I" start="F"/>
+                      <road end="J" start="E"/>
+                      <road end="I" start="E"/>
+                      <road end="J" start="D"/>
+                      <road end="I" start="D"/>
+                      <road end="J" start="C"/>
+                      <road end="I" start="C"/>
+                      <road end="J" start="B"/>
+                      <road end="I" start="B"/>
+                      <road end="J" start="A"/>
+                      <road end="I" start="A"/>
+                    </black>
+                    <gray x="33" y="32">
+                      <black cardinality="3">
+                        <road end="J" start="H"/>
+                        <road end="J" start="F"/>
+                        <road end="J" start="C"/>
+                      </black>
+                      <black cardinality="3">
+                        <road end="J" start="H"/>
+                        <road end="J" start="F"/>
+                        <road end="J" start="C"/>
+                      </black>
+                      <black cardinality="3">
+                        <road end="J" start="H"/>
+                        <road end="J" start="F"/>
+                        <road end="J" start="C"/>
+                      </black>
+                      <black cardinality="3">
+                        <road end="J" start="H"/>
+                        <road end="J" start="F"/>
+                        <road end="J" start="C"/>
+                      </black>
+                    </gray>
+                  </gray>
+                  <gray x="35" y="33">
+                    <gray x="34" y="33">
+                      <black cardinality="11">
+                        <city color="black" name="J" radius="0" x="34" y="33"/>
+                        <road end="K" start="J"/>
+                        <road end="J" start="I"/>
+                        <road end="J" start="H"/>
+                        <road end="J" start="G"/>
+                        <road end="J" start="F"/>
+                        <road end="J" start="E"/>
+                        <road end="J" start="D"/>
+                        <road end="J" start="C"/>
+                        <road end="J" start="B"/>
+                        <road end="J" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="J" radius="0" x="34" y="33"/>
+                        <road end="K" start="J"/>
+                        <road end="J" start="I"/>
+                        <road end="J" start="H"/>
+                        <road end="J" start="G"/>
+                        <road end="J" start="F"/>
+                        <road end="J" start="E"/>
+                        <road end="J" start="D"/>
+                        <road end="J" start="C"/>
+                        <road end="J" start="B"/>
+                        <road end="J" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="J" radius="0" x="34" y="33"/>
+                        <road end="K" start="J"/>
+                        <road end="J" start="I"/>
+                        <road end="J" start="H"/>
+                        <road end="J" start="G"/>
+                        <road end="J" start="F"/>
+                        <road end="J" start="E"/>
+                        <road end="J" start="D"/>
+                        <road end="J" start="C"/>
+                        <road end="J" start="B"/>
+                        <road end="J" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="J" radius="0" x="34" y="33"/>
+                        <road end="K" start="J"/>
+                        <road end="J" start="I"/>
+                        <road end="J" start="H"/>
+                        <road end="J" start="G"/>
+                        <road end="J" start="F"/>
+                        <road end="J" start="E"/>
+                        <road end="J" start="D"/>
+                        <road end="J" start="C"/>
+                        <road end="J" start="B"/>
+                        <road end="J" start="A"/>
+                      </black>
+                    </gray>
+                    <gray x="35" y="33">
+                      <black cardinality="11">
+                        <city color="black" name="K" radius="0" x="35" y="33"/>
+                        <road end="L" start="K"/>
+                        <road end="K" start="J"/>
+                        <road end="K" start="H"/>
+                        <road end="K" start="G"/>
+                        <road end="K" start="F"/>
+                        <road end="K" start="E"/>
+                        <road end="K" start="D"/>
+                        <road end="K" start="C"/>
+                        <road end="K" start="B"/>
+                        <road end="K" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="K" radius="0" x="35" y="33"/>
+                        <road end="L" start="K"/>
+                        <road end="K" start="J"/>
+                        <road end="K" start="H"/>
+                        <road end="K" start="G"/>
+                        <road end="K" start="F"/>
+                        <road end="K" start="E"/>
+                        <road end="K" start="D"/>
+                        <road end="K" start="C"/>
+                        <road end="K" start="B"/>
+                        <road end="K" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="K" radius="0" x="35" y="33"/>
+                        <road end="L" start="K"/>
+                        <road end="K" start="J"/>
+                        <road end="K" start="H"/>
+                        <road end="K" start="G"/>
+                        <road end="K" start="F"/>
+                        <road end="K" start="E"/>
+                        <road end="K" start="D"/>
+                        <road end="K" start="C"/>
+                        <road end="K" start="B"/>
+                        <road end="K" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="K" radius="0" x="35" y="33"/>
+                        <road end="L" start="K"/>
+                        <road end="K" start="J"/>
+                        <road end="K" start="H"/>
+                        <road end="K" start="G"/>
+                        <road end="K" start="F"/>
+                        <road end="K" start="E"/>
+                        <road end="K" start="D"/>
+                        <road end="K" start="C"/>
+                        <road end="K" start="B"/>
+                        <road end="K" start="A"/>
+                      </black>
+                    </gray>
+                    <gray x="34" y="32">
+                      <white/>
+                      <white/>
+                      <white/>
+                      <white/>
+                    </gray>
+                    <gray x="35" y="32">
+                      <white/>
+                      <white/>
+                      <white/>
+                      <white/>
+                    </gray>
+                  </gray>
+                </gray>
+                <gray x="38" y="34">
+                  <white/>
+                  <white/>
+                  <gray x="37" y="33">
+                    <gray x="36" y="33">
+                      <black cardinality="11">
+                        <city color="black" name="L" radius="0" x="36" y="33"/>
+                        <road end="M" start="L"/>
+                        <road end="L" start="K"/>
+                        <road end="L" start="H"/>
+                        <road end="L" start="G"/>
+                        <road end="L" start="F"/>
+                        <road end="L" start="E"/>
+                        <road end="L" start="D"/>
+                        <road end="L" start="C"/>
+                        <road end="L" start="B"/>
+                        <road end="L" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="L" radius="0" x="36" y="33"/>
+                        <road end="M" start="L"/>
+                        <road end="L" start="K"/>
+                        <road end="L" start="H"/>
+                        <road end="L" start="G"/>
+                        <road end="L" start="F"/>
+                        <road end="L" start="E"/>
+                        <road end="L" start="D"/>
+                        <road end="L" start="C"/>
+                        <road end="L" start="B"/>
+                        <road end="L" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="L" radius="0" x="36" y="33"/>
+                        <road end="M" start="L"/>
+                        <road end="L" start="K"/>
+                        <road end="L" start="H"/>
+                        <road end="L" start="G"/>
+                        <road end="L" start="F"/>
+                        <road end="L" start="E"/>
+                        <road end="L" start="D"/>
+                        <road end="L" start="C"/>
+                        <road end="L" start="B"/>
+                        <road end="L" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="L" radius="0" x="36" y="33"/>
+                        <road end="M" start="L"/>
+                        <road end="L" start="K"/>
+                        <road end="L" start="H"/>
+                        <road end="L" start="G"/>
+                        <road end="L" start="F"/>
+                        <road end="L" start="E"/>
+                        <road end="L" start="D"/>
+                        <road end="L" start="C"/>
+                        <road end="L" start="B"/>
+                        <road end="L" start="A"/>
+                      </black>
+                    </gray>
+                    <gray x="37" y="33">
+                      <black cardinality="11">
+                        <city color="black" name="M" radius="0" x="37" y="33"/>
+                        <road end="N" start="M"/>
+                        <road end="M" start="L"/>
+                        <road end="M" start="H"/>
+                        <road end="M" start="G"/>
+                        <road end="M" start="F"/>
+                        <road end="M" start="E"/>
+                        <road end="M" start="D"/>
+                        <road end="M" start="C"/>
+                        <road end="M" start="B"/>
+                        <road end="M" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="M" radius="0" x="37" y="33"/>
+                        <road end="N" start="M"/>
+                        <road end="M" start="L"/>
+                        <road end="M" start="H"/>
+                        <road end="M" start="G"/>
+                        <road end="M" start="F"/>
+                        <road end="M" start="E"/>
+                        <road end="M" start="D"/>
+                        <road end="M" start="C"/>
+                        <road end="M" start="B"/>
+                        <road end="M" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="M" radius="0" x="37" y="33"/>
+                        <road end="N" start="M"/>
+                        <road end="M" start="L"/>
+                        <road end="M" start="H"/>
+                        <road end="M" start="G"/>
+                        <road end="M" start="F"/>
+                        <road end="M" start="E"/>
+                        <road end="M" start="D"/>
+                        <road end="M" start="C"/>
+                        <road end="M" start="B"/>
+                        <road end="M" start="A"/>
+                      </black>
+                      <black cardinality="11">
+                        <city color="black" name="M" radius="0" x="37" y="33"/>
+                        <road end="N" start="M"/>
+                        <road end="M" start="L"/>
+                        <road end="M" start="H"/>
+                        <road end="M" start="G"/>
+                        <road end="M" start="F"/>
+                        <road end="M" start="E"/>
+                        <road end="M" start="D"/>
+                        <road end="M" start="C"/>
+                        <road end="M" start="B"/>
+                        <road end="M" start="A"/>
+                      </black>
+                    </gray>
+                    <gray x="36" y="32">
+                      <white/>
+                      <white/>
+                      <white/>
+                      <white/>
+                    </gray>
+                    <gray x="37" y="32">
+                      <white/>
+                      <white/>
+                      <white/>
+                      <white/>
+                    </gray>
+                  </gray>
+                  <black cardinality="10">
+                    <city color="black" name="N" radius="0" x="38" y="33"/>
+                    <road end="N" start="M"/>
+                    <road end="N" start="H"/>
+                    <road end="N" start="G"/>
+                    <road end="N" start="F"/>
+                    <road end="N" start="E"/>
+                    <road end="N" start="D"/>
+                    <road end="N" start="C"/>
+                    <road end="N" start="B"/>
+                    <road end="N" start="A"/>
+                  </black>
+                </gray>
+              </gray>
+              <white/>
+            </gray>
+            <white/>
+          </gray>
+          <gray x="16" y="16">
+            <black cardinality="7">
+              <road end="I" start="G"/>
+              <road end="J" start="E"/>
+              <road end="I" start="E"/>
+              <road end="J" start="D"/>
+              <road end="I" start="D"/>
+              <road end="I" start="B"/>
+              <road end="I" start="A"/>
+            </black>
+            <black cardinality="48">
+              <road end="N" start="H"/>
+              <road end="M" start="H"/>
+              <road end="L" start="H"/>
+              <road end="K" start="H"/>
+              <road end="J" start="H"/>
+              <road end="I" start="H"/>
+              <road end="N" start="G"/>
+              <road end="M" start="G"/>
+              <road end="L" start="G"/>
+              <road end="K" start="G"/>
+              <road end="J" start="G"/>
+              <road end="I" start="G"/>
+              <road end="N" start="F"/>
+              <road end="M" start="F"/>
+              <road end="L" start="F"/>
+              <road end="K" start="F"/>
+              <road end="J" start="F"/>
+              <road end="I" start="F"/>
+              <road end="N" start="E"/>
+              <road end="M" start="E"/>
+              <road end="L" start="E"/>
+              <road end="K" start="E"/>
+              <road end="J" start="E"/>
+              <road end="I" start="E"/>
+              <road end="N" start="D"/>
+              <road end="M" start="D"/>
+              <road end="L" start="D"/>
+              <road end="K" start="D"/>
+              <road end="J" start="D"/>
+              <road end="I" start="D"/>
+              <road end="N" start="C"/>
+              <road end="M" start="C"/>
+              <road end="L" start="C"/>
+              <road end="K" start="C"/>
+              <road end="J" start="C"/>
+              <road end="I" start="C"/>
+              <road end="N" start="B"/>
+              <road end="M" start="B"/>
+              <road end="L" start="B"/>
+              <road end="K" start="B"/>
+              <road end="J" start="B"/>
+              <road end="I" start="B"/>
+              <road end="N" start="A"/>
+              <road end="M" start="A"/>
+              <road end="L" start="A"/>
+              <road end="K" start="A"/>
+              <road end="J" start="A"/>
+              <road end="I" start="A"/>
+            </black>
+            <gray x="8" y="8">
+              <black cardinality="15">
+                <road end="I" start="G"/>
+                <road end="N" start="E"/>
+                <road end="M" start="E"/>
+                <road end="L" start="E"/>
+                <road end="K" start="E"/>
+                <road end="J" start="E"/>
+                <road end="I" start="E"/>
+                <road end="N" start="D"/>
+                <road end="M" start="D"/>
+                <road end="L" start="D"/>
+                <road end="K" start="D"/>
+                <road end="J" start="D"/>
+                <road end="I" start="D"/>
+                <road end="I" start="B"/>
+                <road end="I" start="A"/>
+              </black>
+              <black cardinality="48">
+                <road end="N" start="H"/>
+                <road end="M" start="H"/>
+                <road end="L" start="H"/>
+                <road end="K" start="H"/>
+                <road end="J" start="H"/>
+                <road end="I" start="H"/>
+                <road end="N" start="G"/>
+                <road end="M" start="G"/>
+                <road end="L" start="G"/>
+                <road end="K" start="G"/>
+                <road end="J" start="G"/>
+                <road end="I" start="G"/>
+                <road end="N" start="F"/>
+                <road end="M" start="F"/>
+                <road end="L" start="F"/>
+                <road end="K" start="F"/>
+                <road end="J" start="F"/>
+                <road end="I" start="F"/>
+                <road end="N" start="E"/>
+                <road end="M" start="E"/>
+                <road end="L" start="E"/>
+                <road end="K" start="E"/>
+                <road end="J" start="E"/>
+                <road end="I" start="E"/>
+                <road end="N" start="D"/>
+                <road end="M" start="D"/>
+                <road end="L" start="D"/>
+                <road end="K" start="D"/>
+                <road end="J" start="D"/>
+                <road end="I" start="D"/>
+                <road end="N" start="C"/>
+                <road end="M" start="C"/>
+                <road end="L" start="C"/>
+                <road end="K" start="C"/>
+                <road end="J" start="C"/>
+                <road end="I" start="C"/>
+                <road end="N" start="B"/>
+                <road end="M" start="B"/>
+                <road end="L" start="B"/>
+                <road end="K" start="B"/>
+                <road end="J" start="B"/>
+                <road end="I" start="B"/>
+                <road end="N" start="A"/>
+                <road end="M" start="A"/>
+                <road end="L" start="A"/>
+                <road end="K" start="A"/>
+                <road end="J" start="A"/>
+                <road end="I" start="A"/>
+              </black>
+              <gray x="4" y="4">
+                <gray x="2" y="6">
+                  <white/>
+                  <white/>
+                  <white/>
+                  <gray x="3" y="5">
+                    <white/>
+                    <black cardinality="14">
+                      <city color="black" name="E" radius="0" x="4" y="5"/>
+                      <road end="N" start="E"/>
+                      <road end="M" start="E"/>
+                      <road end="L" start="E"/>
+                      <road end="K" start="E"/>
+                      <road end="J" start="E"/>
+                      <road end="I" start="E"/>
+                      <road end="H" start="E"/>
+                      <road end="G" start="E"/>
+                      <road end="F" start="E"/>
+                      <road end="E" start="D"/>
+                      <road end="E" start="C"/>
+                      <road end="E" start="B"/>
+                      <road end="E" start="A"/>
+                    </black>
+                    <white/>
+                    <gray x="3" y="4">
+                      <white/>
+                      <white/>
+                      <white/>
+                      <white/>
+                    </gray>
+                  </gray>
+                </gray>
+                <gray x="6" y="6">
+                  <gray x="5" y="7">
+                    <white/>
+                    <white/>
+                    <black cardinality="14">
+                      <city color="black" name="D" radius="0" x="5" y="6"/>
+                      <road end="N" start="D"/>
+                      <road end="M" start="D"/>
+                      <road end="L" start="D"/>
+                      <road end="K" start="D"/>
+                      <road end="J" start="D"/>
+                      <road end="I" start="D"/>
+                      <road end="H" start="D"/>
+                      <road end="G" start="D"/>
+                      <road end="F" start="D"/>
+                      <road end="E" start="D"/>
+                      <road end="D" start="C"/>
+                      <road end="D" start="B"/>
+                      <road end="D" start="A"/>
+                    </black>
+                    <gray x="5" y="6">
+                      <black cardinality="14">
+                        <city color="black" name="D" radius="0" x="5" y="6"/>
+                        <road end="N" start="D"/>
+                        <road end="M" start="D"/>
+                        <road end="L" start="D"/>
+                        <road end="K" start="D"/>
+                        <road end="J" start="D"/>
+                        <road end="I" start="D"/>
+                        <road end="H" start="D"/>
+                        <road end="G" start="D"/>
+                        <road end="F" start="D"/>
+                        <road end="E" start="D"/>
+                        <road end="D" start="C"/>
+                        <road end="D" start="B"/>
+                        <road end="D" start="A"/>
+                      </black>
+                      <black cardinality="14">
+                        <city color="black" name="D" radius="0" x="5" y="6"/>
+                        <road end="N" start="D"/>
+                        <road end="M" start="D"/>
+                        <road end="L" start="D"/>
+                        <road end="K" start="D"/>
+                        <road end="J" start="D"/>
+                        <road end="I" start="D"/>
+                        <road end="H" start="D"/>
+                        <road end="G" start="D"/>
+                        <road end="F" start="D"/>
+                        <road end="E" start="D"/>
+                        <road end="D" start="C"/>
+                        <road end="D" start="B"/>
+                        <road end="D" start="A"/>
+                      </black>
+                      <black cardinality="14">
+                        <city color="black" name="D" radius="0" x="5" y="6"/>
+                        <road end="N" start="D"/>
+                        <road end="M" start="D"/>
+                        <road end="L" start="D"/>
+                        <road end="K" start="D"/>
+                        <road end="J" start="D"/>
+                        <road end="I" start="D"/>
+                        <road end="H" start="D"/>
+                        <road end="G" start="D"/>
+                        <road end="F" start="D"/>
+                        <road end="E" start="D"/>
+                        <road end="D" start="C"/>
+                        <road end="D" start="B"/>
+                        <road end="D" start="A"/>
+                      </black>
+                      <black cardinality="14">
+                        <city color="black" name="D" radius="0" x="5" y="6"/>
+                        <road end="N" start="D"/>
+                        <road end="M" start="D"/>
+                        <road end="L" start="D"/>
+                        <road end="K" start="D"/>
+                        <road end="J" start="D"/>
+                        <road end="I" start="D"/>
+                        <road end="H" start="D"/>
+                        <road end="G" start="D"/>
+                        <road end="F" start="D"/>
+                        <road end="E" start="D"/>
+                        <road end="D" start="C"/>
+                        <road end="D" start="B"/>
+                        <road end="D" start="A"/>
+                      </black>
+                    </gray>
+                  </gray>
+                  <black cardinality="56">
+                    <city color="black" name="B" radius="0" x="6" y="6"/>
+                    <road end="N" start="H"/>
+                    <road end="M" start="H"/>
+                    <road end="L" start="H"/>
+                    <road end="K" start="H"/>
+                    <road end="J" start="H"/>
+                    <road end="I" start="H"/>
+                    <road end="N" start="G"/>
+                    <road end="M" start="G"/>
+                    <road end="L" start="G"/>
+                    <road end="K" start="G"/>
+                    <road end="J" start="G"/>
+                    <road end="I" start="G"/>
+                    <road end="N" start="F"/>
+                    <road end="M" start="F"/>
+                    <road end="L" start="F"/>
+                    <road end="K" start="F"/>
+                    <road end="J" start="F"/>
+                    <road end="I" start="F"/>
+                    <road end="N" start="E"/>
+                    <road end="M" start="E"/>
+                    <road end="L" start="E"/>
+                    <road end="K" start="E"/>
+                    <road end="J" start="E"/>
+                    <road end="I" start="E"/>
+                    <road end="N" start="D"/>
+                    <road end="M" start="D"/>
+                    <road end="L" start="D"/>
+                    <road end="K" start="D"/>
+                    <road end="J" start="D"/>
+                    <road end="I" start="D"/>
+                    <road end="N" start="C"/>
+                    <road end="M" start="C"/>
+                    <road end="L" start="C"/>
+                    <road end="K" start="C"/>
+                    <road end="J" start="C"/>
+                    <road end="I" start="C"/>
+                    <road end="N" start="B"/>
+                    <road end="M" start="B"/>
+                    <road end="L" start="B"/>
+                    <road end="K" start="B"/>
+                    <road end="J" start="B"/>
+                    <road end="I" start="B"/>
+                    <road end="H" start="B"/>
+                    <road end="G" start="B"/>
+                    <road end="F" start="B"/>
+                    <road end="E" start="B"/>
+                    <road end="D" start="B"/>
+                    <road end="C" start="B"/>
+                    <road end="N" start="A"/>
+                    <road end="M" start="A"/>
+                    <road end="L" start="A"/>
+                    <road end="K" start="A"/>
+                    <road end="J" start="A"/>
+                    <road end="I" start="A"/>
+                    <road end="B" start="A"/>
+                  </black>
+                  <gray x="5" y="5">
+                    <gray x="4" y="5">
+                      <black cardinality="14">
+                        <city color="black" name="E" radius="0" x="4" y="5"/>
+                        <road end="N" start="E"/>
+                        <road end="M" start="E"/>
+                        <road end="L" start="E"/>
+                        <road end="K" start="E"/>
+                        <road end="J" start="E"/>
+                        <road end="I" start="E"/>
+                        <road end="H" start="E"/>
+                        <road end="G" start="E"/>
+                        <road end="F" start="E"/>
+                        <road end="E" start="D"/>
+                        <road end="E" start="C"/>
+                        <road end="E" start="B"/>
+                        <road end="E" start="A"/>
+                      </black>
+                      <black cardinality="14">
+                        <city color="black" name="E" radius="0" x="4" y="5"/>
+                        <road end="N" start="E"/>
+                        <road end="M" start="E"/>
+                        <road end="L" start="E"/>
+                        <road end="K" start="E"/>
+                        <road end="J" start="E"/>
+                        <road end="I" start="E"/>
+                        <road end="H" start="E"/>
+                        <road end="G" start="E"/>
+                        <road end="F" start="E"/>
+                        <road end="E" start="D"/>
+                        <road end="E" start="C"/>
+                        <road end="E" start="B"/>
+                        <road end="E" start="A"/>
+                      </black>
+                      <black cardinality="14">
+                        <city color="black" name="E" radius="0" x="4" y="5"/>
+                        <road end="N" start="E"/>
+                        <road end="M" start="E"/>
+                        <road end="L" start="E"/>
+                        <road end="K" start="E"/>
+                        <road end="J" start="E"/>
+                        <road end="I" start="E"/>
+                        <road end="H" start="E"/>
+                        <road end="G" start="E"/>
+                        <road end="F" start="E"/>
+                        <road end="E" start="D"/>
+                        <road end="E" start="C"/>
+                        <road end="E" start="B"/>
+                        <road end="E" start="A"/>
+                      </black>
+                      <black cardinality="14">
+                        <city color="black" name="E" radius="0" x="4" y="5"/>
+                        <road end="N" start="E"/>
+                        <road end="M" start="E"/>
+                        <road end="L" start="E"/>
+                        <road end="K" start="E"/>
+                        <road end="J" start="E"/>
+                        <road end="I" start="E"/>
+                        <road end="H" start="E"/>
+                        <road end="G" start="E"/>
+                        <road end="F" start="E"/>
+                        <road end="E" start="D"/>
+                        <road end="E" start="C"/>
+                        <road end="E" start="B"/>
+                        <road end="E" start="A"/>
+                      </black>
+                    </gray>
+                    <gray x="5" y="5">
+                      <black cardinality="18">
+                        <city color="black" name="A" radius="0" x="5" y="5"/>
+                        <road end="I" start="G"/>
+                        <road end="F" start="E"/>
+                        <road end="D" start="C"/>
+                        <road end="G" start="B"/>
+                        <road end="N" start="A"/>
+                        <road end="M" start="A"/>
+                        <road end="L" start="A"/>
+                        <road end="K" start="A"/>
+                        <road end="J" start="A"/>
+                        <road end="I" start="A"/>
+                        <road end="H" start="A"/>
+                        <road end="G" start="A"/>
+                        <road end="F" start="A"/>
+                        <road end="E" start="A"/>
+                        <road end="D" start="A"/>
+                        <road end="C" start="A"/>
+                        <road end="B" start="A"/>
+                      </black>
+                      <black cardinality="18">
+                        <city color="black" name="A" radius="0" x="5" y="5"/>
+                        <road end="I" start="G"/>
+                        <road end="F" start="E"/>
+                        <road end="D" start="C"/>
+                        <road end="G" start="B"/>
+                        <road end="N" start="A"/>
+                        <road end="M" start="A"/>
+                        <road end="L" start="A"/>
+                        <road end="K" start="A"/>
+                        <road end="J" start="A"/>
+                        <road end="I" start="A"/>
+                        <road end="H" start="A"/>
+                        <road end="G" start="A"/>
+                        <road end="F" start="A"/>
+                        <road end="E" start="A"/>
+                        <road end="D" start="A"/>
+                        <road end="C" start="A"/>
+                        <road end="B" start="A"/>
+                      </black>
+                      <black cardinality="18">
+                        <city color="black" name="A" radius="0" x="5" y="5"/>
+                        <road end="I" start="G"/>
+                        <road end="F" start="E"/>
+                        <road end="D" start="C"/>
+                        <road end="G" start="B"/>
+                        <road end="N" start="A"/>
+                        <road end="M" start="A"/>
+                        <road end="L" start="A"/>
+                        <road end="K" start="A"/>
+                        <road end="J" start="A"/>
+                        <road end="I" start="A"/>
+                        <road end="H" start="A"/>
+                        <road end="G" start="A"/>
+                        <road end="F" start="A"/>
+                        <road end="E" start="A"/>
+                        <road end="D" start="A"/>
+                        <road end="C" start="A"/>
+                        <road end="B" start="A"/>
+                      </black>
+                      <black cardinality="18">
+                        <city color="black" name="A" radius="0" x="5" y="5"/>
+                        <road end="I" start="G"/>
+                        <road end="F" start="E"/>
+                        <road end="D" start="C"/>
+                        <road end="G" start="B"/>
+                        <road end="N" start="A"/>
+                        <road end="M" start="A"/>
+                        <road end="L" start="A"/>
+                        <road end="K" start="A"/>
+                        <road end="J" start="A"/>
+                        <road end="I" start="A"/>
+                        <road end="H" start="A"/>
+                        <road end="G" start="A"/>
+                        <road end="F" start="A"/>
+                        <road end="E" start="A"/>
+                        <road end="D" start="A"/>
+                        <road end="C" start="A"/>
+                        <road end="B" start="A"/>
+                      </black>
+                    </gray>
+                    <gray x="4" y="4">
+                      <black cardinality="15">
+                        <city color="black" name="G" radius="0" x="4" y="4"/>
+                        <road end="N" start="G"/>
+                        <road end="M" start="G"/>
+                        <road end="L" start="G"/>
+                        <road end="K" start="G"/>
+                        <road end="J" start="G"/>
+                        <road end="I" start="G"/>
+                        <road end="H" start="G"/>
+                        <road end="G" start="F"/>
+                        <road end="H" start="E"/>
+                        <road end="G" start="E"/>
+                        <road end="G" start="D"/>
+                        <road end="G" start="C"/>
+                        <road end="G" start="B"/>
+                        <road end="G" start="A"/>
+                      </black>
+                      <black cardinality="15">
+                        <city color="black" name="G" radius="0" x="4" y="4"/>
+                        <road end="N" start="G"/>
+                        <road end="M" start="G"/>
+                        <road end="L" start="G"/>
+                        <road end="K" start="G"/>
+                        <road end="J" start="G"/>
+                        <road end="I" start="G"/>
+                        <road end="H" start="G"/>
+                        <road end="G" start="F"/>
+                        <road end="H" start="E"/>
+                        <road end="G" start="E"/>
+                        <road end="G" start="D"/>
+                        <road end="G" start="C"/>
+                        <road end="G" start="B"/>
+                        <road end="G" start="A"/>
+                      </black>
+                      <black cardinality="15">
+                        <city color="black" name="G" radius="0" x="4" y="4"/>
+                        <road end="N" start="G"/>
+                        <road end="M" start="G"/>
+                        <road end="L" start="G"/>
+                        <road end="K" start="G"/>
+                        <road end="J" start="G"/>
+                        <road end="I" start="G"/>
+                        <road end="H" start="G"/>
+                        <road end="G" start="F"/>
+                        <road end="H" start="E"/>
+                        <road end="G" start="E"/>
+                        <road end="G" start="D"/>
+                        <road end="G" start="C"/>
+                        <road end="G" start="B"/>
+                        <road end="G" start="A"/>
+                      </black>
+                      <black cardinality="15">
+                        <city color="black" name="G" radius="0" x="4" y="4"/>
+                        <road end="N" start="G"/>
+                        <road end="M" start="G"/>
+                        <road end="L" start="G"/>
+                        <road end="K" start="G"/>
+                        <road end="J" start="G"/>
+                        <road end="I" start="G"/>
+                        <road end="H" start="G"/>
+                        <road end="G" start="F"/>
+                        <road end="H" start="E"/>
+                        <road end="G" start="E"/>
+                        <road end="G" start="D"/>
+                        <road end="G" start="C"/>
+                        <road end="G" start="B"/>
+                        <road end="G" start="A"/>
+                      </black>
+                    </gray>
+                    <gray x="5" y="4">
+                      <black cardinality="16">
+                        <city color="black" name="C" radius="0" x="5" y="4"/>
+                        <road end="J" start="H"/>
+                        <road end="H" start="F"/>
+                        <road end="N" start="C"/>
+                        <road end="M" start="C"/>
+                        <road end="L" start="C"/>
+                        <road end="K" start="C"/>
+                        <road end="J" start="C"/>
+                        <road end="I" start="C"/>
+                        <road end="H" start="C"/>
+                        <road end="G" start="C"/>
+                        <road end="F" start="C"/>
+                        <road end="E" start="C"/>
+                        <road end="D" start="C"/>
+                        <road end="C" start="B"/>
+                        <road end="C" start="A"/>
+                      </black>
+                      <black cardinality="16">
+                        <city color="black" name="C" radius="0" x="5" y="4"/>
+                        <road end="J" start="H"/>
+                        <road end="H" start="F"/>
+                        <road end="N" start="C"/>
+                        <road end="M" start="C"/>
+                        <road end="L" start="C"/>
+                        <road end="K" start="C"/>
+                        <road end="J" start="C"/>
+                        <road end="I" start="C"/>
+                        <road end="H" start="C"/>
+                        <road end="G" start="C"/>
+                        <road end="F" start="C"/>
+                        <road end="E" start="C"/>
+                        <road end="D" start="C"/>
+                        <road end="C" start="B"/>
+                        <road end="C" start="A"/>
+                      </black>
+                      <black cardinality="16">
+                        <city color="black" name="C" radius="0" x="5" y="4"/>
+                        <road end="J" start="H"/>
+                        <road end="H" start="F"/>
+                        <road end="N" start="C"/>
+                        <road end="M" start="C"/>
+                        <road end="L" start="C"/>
+                        <road end="K" start="C"/>
+                        <road end="J" start="C"/>
+                        <road end="I" start="C"/>
+                        <road end="H" start="C"/>
+                        <road end="G" start="C"/>
+                        <road end="F" start="C"/>
+                        <road end="E" start="C"/>
+                        <road end="D" start="C"/>
+                        <road end="C" start="B"/>
+                        <road end="C" start="A"/>
+                      </black>
+                      <black cardinality="16">
+                        <city color="black" name="C" radius="0" x="5" y="4"/>
+                        <road end="J" start="H"/>
+                        <road end="H" start="F"/>
+                        <road end="N" start="C"/>
+                        <road end="M" start="C"/>
+                        <road end="L" start="C"/>
+                        <road end="K" start="C"/>
+                        <road end="J" start="C"/>
+                        <road end="I" start="C"/>
+                        <road end="H" start="C"/>
+                        <road end="G" start="C"/>
+                        <road end="F" start="C"/>
+                        <road end="E" start="C"/>
+                        <road end="D" start="C"/>
+                        <road end="C" start="B"/>
+                        <road end="C" start="A"/>
+                      </black>
+                    </gray>
+                  </gray>
+                  <gray x="7" y="5">
+                    <gray x="6" y="5">
+                      <black cardinality="16">
+                        <city color="black" name="F" radius="0" x="6" y="5"/>
+                        <road end="J" start="H"/>
+                        <road end="N" start="F"/>
+                        <road end="M" start="F"/>
+                        <road end="L" start="F"/>
+                        <road end="K" start="F"/>
+                        <road end="J" start="F"/>
+                        <road end="I" start="F"/>
+                        <road end="H" start="F"/>
+                        <road end="G" start="F"/>
+                        <road end="F" start="E"/>
+                        <road end="F" start="D"/>
+                        <road end="J" start="C"/>
+                        <road end="F" start="C"/>
+                        <road end="F" start="B"/>
+                        <road end="F" start="A"/>
+                      </black>
+                      <black cardinality="16">
+                        <city color="black" name="F" radius="0" x="6" y="5"/>
+                        <road end="J" start="H"/>
+                        <road end="N" start="F"/>
+                        <road end="M" start="F"/>
+                        <road end="L" start="F"/>
+                        <road end="K" start="F"/>
+                        <road end="J" start="F"/>
+                        <road end="I" start="F"/>
+                        <road end="H" start="F"/>
+                        <road end="G" start="F"/>
+                        <road end="F" start="E"/>
+                        <road end="F" start="D"/>
+                        <road end="J" start="C"/>
+                        <road end="F" start="C"/>
+                        <road end="F" start="B"/>
+                        <road end="F" start="A"/>
+                      </black>
+                      <black cardinality="16">
+                        <city color="black" name="F" radius="0" x="6" y="5"/>
+                        <road end="J" start="H"/>
+                        <road end="N" start="F"/>
+                        <road end="M" start="F"/>
+                        <road end="L" start="F"/>
+                        <road end="K" start="F"/>
+                        <road end="J" start="F"/>
+                        <road end="I" start="F"/>
+                        <road end="H" start="F"/>
+                        <road end="G" start="F"/>
+                        <road end="F" start="E"/>
+                        <road end="F" start="D"/>
+                        <road end="J" start="C"/>
+                        <road end="F" start="C"/>
+                        <road end="F" start="B"/>
+                        <road end="F" start="A"/>
+                      </black>
+                      <black cardinality="16">
+                        <city color="black" name="F" radius="0" x="6" y="5"/>
+                        <road end="J" start="H"/>
+                        <road end="N" start="F"/>
+                        <road end="M" start="F"/>
+                        <road end="L" start="F"/>
+                        <road end="K" start="F"/>
+                        <road end="J" start="F"/>
+                        <road end="I" start="F"/>
+                        <road end="H" start="F"/>
+                        <road end="G" start="F"/>
+                        <road end="F" start="E"/>
+                        <road end="F" start="D"/>
+                        <road end="J" start="C"/>
+                        <road end="F" start="C"/>
+                        <road end="F" start="B"/>
+                        <road end="F" start="A"/>
+                      </black>
+                    </gray>
+                    <black cardinality="15">
+                      <road end="N" start="H"/>
+                      <road end="M" start="H"/>
+                      <road end="L" start="H"/>
+                      <road end="K" start="H"/>
+                      <road end="J" start="H"/>
+                      <road end="N" start="F"/>
+                      <road end="M" start="F"/>
+                      <road end="L" start="F"/>
+                      <road end="K" start="F"/>
+                      <road end="J" start="F"/>
+                      <road end="N" start="C"/>
+                      <road end="M" start="C"/>
+                      <road end="L" start="C"/>
+                      <road end="K" start="C"/>
+                      <road end="J" start="C"/>
+                    </black>
+                    <black cardinality="24">
+                      <city color="black" name="F" radius="0" x="6" y="5"/>
+                      <road end="N" start="H"/>
+                      <road end="M" start="H"/>
+                      <road end="L" start="H"/>
+                      <road end="K" start="H"/>
+                      <road end="J" start="H"/>
+                      <road end="N" start="F"/>
+                      <road end="M" start="F"/>
+                      <road end="L" start="F"/>
+                      <road end="K" start="F"/>
+                      <road end="J" start="F"/>
+                      <road end="I" start="F"/>
+                      <road end="H" start="F"/>
+                      <road end="G" start="F"/>
+                      <road end="F" start="E"/>
+                      <road end="F" start="D"/>
+                      <road end="N" start="C"/>
+                      <road end="M" start="C"/>
+                      <road end="L" start="C"/>
+                      <road end="K" start="C"/>
+                      <road end="J" start="C"/>
+                      <road end="F" start="C"/>
+                      <road end="F" start="B"/>
+                      <road end="F" start="A"/>
+                    </black>
+                    <white/>
+                  </gray>
+                </gray>
+                <gray x="2" y="2">
+                  <white/>
+                  <gray x="3" y="3">
+                    <white/>
+                    <gray x="3" y="3">
+                      <white/>
+                      <white/>
+                      <white/>
+                      <white/>
+                    </gray>
+                    <white/>
+                    <black cardinality="14">
+                      <city color="black" name="H" radius="0" x="4" y="3"/>
+                      <road end="N" start="H"/>
+                      <road end="M" start="H"/>
+                      <road end="L" start="H"/>
+                      <road end="K" start="H"/>
+                      <road end="J" start="H"/>
+                      <road end="I" start="H"/>
+                      <road end="H" start="G"/>
+                      <road end="H" start="F"/>
+                      <road end="H" start="E"/>
+                      <road end="H" start="D"/>
+                      <road end="H" start="C"/>
+                      <road end="H" start="B"/>
+                      <road end="H" start="A"/>
+                    </black>
+                  </gray>
+                  <white/>
+                  <white/>
+                </gray>
+                <gray x="6" y="2">
+                  <gray x="5" y="3">
+                    <gray x="4" y="3">
+                      <black cardinality="14">
+                        <city color="black" name="H" radius="0" x="4" y="3"/>
+                        <road end="N" start="H"/>
+                        <road end="M" start="H"/>
+                        <road end="L" start="H"/>
+                        <road end="K" start="H"/>
+                        <road end="J" start="H"/>
+                        <road end="I" start="H"/>
+                        <road end="H" start="G"/>
+                        <road end="H" start="F"/>
+                        <road end="H" start="E"/>
+                        <road end="H" start="D"/>
+                        <road end="H" start="C"/>
+                        <road end="H" start="B"/>
+                        <road end="H" start="A"/>
+                      </black>
+                      <black cardinality="14">
+                        <city color="black" name="H" radius="0" x="4" y="3"/>
+                        <road end="N" start="H"/>
+                        <road end="M" start="H"/>
+                        <road end="L" start="H"/>
+                        <road end="K" start="H"/>
+                        <road end="J" start="H"/>
+                        <road end="I" start="H"/>
+                        <road end="H" start="G"/>
+                        <road end="H" start="F"/>
+                        <road end="H" start="E"/>
+                        <road end="H" start="D"/>
+                        <road end="H" start="C"/>
+                        <road end="H" start="B"/>
+                        <road end="H" start="A"/>
+                      </black>
+                      <black cardinality="14">
+                        <city color="black" name="H" radius="0" x="4" y="3"/>
+                        <road end="N" start="H"/>
+                        <road end="M" start="H"/>
+                        <road end="L" start="H"/>
+                        <road end="K" start="H"/>
+                        <road end="J" start="H"/>
+                        <road end="I" start="H"/>
+                        <road end="H" start="G"/>
+                        <road end="H" start="F"/>
+                        <road end="H" start="E"/>
+                        <road end="H" start="D"/>
+                        <road end="H" start="C"/>
+                        <road end="H" start="B"/>
+                        <road end="H" start="A"/>
+                      </black>
+                      <black cardinality="14">
+                        <city color="black" name="H" radius="0" x="4" y="3"/>
+                        <road end="N" start="H"/>
+                        <road end="M" start="H"/>
+                        <road end="L" start="H"/>
+                        <road end="K" start="H"/>
+                        <road end="J" start="H"/>
+                        <road end="I" start="H"/>
+                        <road end="H" start="G"/>
+                        <road end="H" start="F"/>
+                        <road end="H" start="E"/>
+                        <road end="H" start="D"/>
+                        <road end="H" start="C"/>
+                        <road end="H" start="B"/>
+                        <road end="H" start="A"/>
+                      </black>
+                    </gray>
+                    <black cardinality="20">
+                      <city color="black" name="C" radius="0" x="5" y="4"/>
+                      <road end="N" start="H"/>
+                      <road end="M" start="H"/>
+                      <road end="L" start="H"/>
+                      <road end="K" start="H"/>
+                      <road end="J" start="H"/>
+                      <road end="H" start="F"/>
+                      <road end="N" start="C"/>
+                      <road end="M" start="C"/>
+                      <road end="L" start="C"/>
+                      <road end="K" start="C"/>
+                      <road end="J" start="C"/>
+                      <road end="I" start="C"/>
+                      <road end="H" start="C"/>
+                      <road end="G" start="C"/>
+                      <road end="F" start="C"/>
+                      <road end="E" start="C"/>
+                      <road end="D" start="C"/>
+                      <road end="C" start="B"/>
+                      <road end="C" start="A"/>
+                    </black>
+                    <black cardinality="14">
+                      <city color="black" name="H" radius="0" x="4" y="3"/>
+                      <road end="N" start="H"/>
+                      <road end="M" start="H"/>
+                      <road end="L" start="H"/>
+                      <road end="K" start="H"/>
+                      <road end="J" start="H"/>
+                      <road end="I" start="H"/>
+                      <road end="H" start="G"/>
+                      <road end="H" start="F"/>
+                      <road end="H" start="E"/>
+                      <road end="H" start="D"/>
+                      <road end="H" start="C"/>
+                      <road end="H" start="B"/>
+                      <road end="H" start="A"/>
+                    </black>
+                    <white/>
+                  </gray>
+                  <white/>
+                  <white/>
+                  <white/>
+                </gray>
+              </gray>
+              <black cardinality="36">
+                <road end="N" start="H"/>
+                <road end="M" start="H"/>
+                <road end="L" start="H"/>
+                <road end="K" start="H"/>
+                <road end="J" start="H"/>
+                <road end="I" start="H"/>
+                <road end="N" start="G"/>
+                <road end="M" start="G"/>
+                <road end="L" start="G"/>
+                <road end="K" start="G"/>
+                <road end="J" start="G"/>
+                <road end="I" start="G"/>
+                <road end="N" start="F"/>
+                <road end="M" start="F"/>
+                <road end="L" start="F"/>
+                <road end="K" start="F"/>
+                <road end="J" start="F"/>
+                <road end="I" start="F"/>
+                <road end="N" start="C"/>
+                <road end="M" start="C"/>
+                <road end="L" start="C"/>
+                <road end="K" start="C"/>
+                <road end="J" start="C"/>
+                <road end="I" start="C"/>
+                <road end="N" start="B"/>
+                <road end="M" start="B"/>
+                <road end="L" start="B"/>
+                <road end="K" start="B"/>
+                <road end="J" start="B"/>
+                <road end="I" start="B"/>
+                <road end="N" start="A"/>
+                <road end="M" start="A"/>
+                <road end="L" start="A"/>
+                <road end="K" start="A"/>
+                <road end="J" start="A"/>
+                <road end="I" start="A"/>
+              </black>
+            </gray>
+            <black cardinality="44">
+              <road end="N" start="H"/>
+              <road end="M" start="H"/>
+              <road end="L" start="H"/>
+              <road end="K" start="H"/>
+              <road end="J" start="H"/>
+              <road end="I" start="H"/>
+              <road end="N" start="G"/>
+              <road end="M" start="G"/>
+              <road end="L" start="G"/>
+              <road end="K" start="G"/>
+              <road end="J" start="G"/>
+              <road end="I" start="G"/>
+              <road end="N" start="F"/>
+              <road end="M" start="F"/>
+              <road end="L" start="F"/>
+              <road end="K" start="F"/>
+              <road end="J" start="F"/>
+              <road end="I" start="F"/>
+              <road end="N" start="E"/>
+              <road end="M" start="E"/>
+              <road end="L" start="E"/>
+              <road end="K" start="E"/>
+              <road end="N" start="D"/>
+              <road end="M" start="D"/>
+              <road end="L" start="D"/>
+              <road end="K" start="D"/>
+              <road end="N" start="C"/>
+              <road end="M" start="C"/>
+              <road end="L" start="C"/>
+              <road end="K" start="C"/>
+              <road end="J" start="C"/>
+              <road end="I" start="C"/>
+              <road end="N" start="B"/>
+              <road end="M" start="B"/>
+              <road end="L" start="B"/>
+              <road end="K" start="B"/>
+              <road end="J" start="B"/>
+              <road end="I" start="B"/>
+              <road end="N" start="A"/>
+              <road end="M" start="A"/>
+              <road end="L" start="A"/>
+              <road end="K" start="A"/>
+              <road end="J" start="A"/>
+              <road end="I" start="A"/>
+            </black>
+          </gray>
+          <black cardinality="46">
+            <road end="N" start="H"/>
+            <road end="M" start="H"/>
+            <road end="L" start="H"/>
+            <road end="K" start="H"/>
+            <road end="J" start="H"/>
+            <road end="I" start="H"/>
+            <road end="N" start="G"/>
+            <road end="M" start="G"/>
+            <road end="L" start="G"/>
+            <road end="K" start="G"/>
+            <road end="J" start="G"/>
+            <road end="I" start="G"/>
+            <road end="N" start="F"/>
+            <road end="M" start="F"/>
+            <road end="L" start="F"/>
+            <road end="K" start="F"/>
+            <road end="J" start="F"/>
+            <road end="I" start="F"/>
+            <road end="N" start="E"/>
+            <road end="M" start="E"/>
+            <road end="L" start="E"/>
+            <road end="K" start="E"/>
+            <road end="J" start="E"/>
+            <road end="N" start="D"/>
+            <road end="M" start="D"/>
+            <road end="L" start="D"/>
+            <road end="K" start="D"/>
+            <road end="J" start="D"/>
+            <road end="N" start="C"/>
+            <road end="M" start="C"/>
+            <road end="L" start="C"/>
+            <road end="K" start="C"/>
+            <road end="J" start="C"/>
+            <road end="I" start="C"/>
+            <road end="N" start="B"/>
+            <road end="M" start="B"/>
+            <road end="L" start="B"/>
+            <road end="K" start="B"/>
+            <road end="J" start="B"/>
+            <road end="I" start="B"/>
+            <road end="N" start="A"/>
+            <road end="M" start="A"/>
+            <road end="L" start="A"/>
+            <road end="K" start="A"/>
+            <road end="J" start="A"/>
+            <road end="I" start="A"/>
+          </black>
+        </gray>
+      </quadtree>
+    </output>
+  </success>
+</results>

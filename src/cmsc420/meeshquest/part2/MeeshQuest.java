@@ -23,6 +23,8 @@ public class MeeshQuest {
 	public static Document results = null;
 	public static int spatialHeight;
 	public static int spatialWidth;
+	public static int pmOrder;
+	public static int g = 1;
 	public static CanvasPlus canvas = new CanvasPlus("MeeshQuest");
 	
     public static void main(String[] args) {
@@ -33,18 +35,21 @@ public class MeeshQuest {
 			e1.printStackTrace();
 		}
         try {
-        	//File test = new File ("new/part1.nonFatalError.input.xml");
+        	//File test = new File ("p2sampletests/part2.public.nearCityToRoad.input.xml");
         	//Document doc = XmlUtility.validateNoNamespace(test);    	
         	Document doc = XmlUtility.validateNoNamespace(System.in);
         	Element commandNode = doc.getDocumentElement();
-        	
         	//Gets the spatial width and height from the command node
         	spatialHeight = Integer.parseInt(commandNode.getAttribute("spatialHeight"));
         	spatialWidth = Integer.parseInt(commandNode.getAttribute("spatialWidth"));
+        	if (!commandNode.getAttribute("g").isEmpty()) {
+        		g = Integer.parseInt(commandNode.getAttribute("g"));
+        	}
+        	pmOrder = Integer.parseInt(commandNode.getAttribute("pmOrder"));
         	
         	//canvas tree
         	CommandParser.tree = new PRQT(spatialHeight, spatialWidth);
-        	CommandParser.AVLTree = new PM3QT(spatialHeight, spatialWidth);
+        	CommandParser.PMTree = new PM3QT(spatialHeight, spatialWidth);
         	
         	canvas.setFrameSize(spatialWidth, spatialHeight);
         	
@@ -67,7 +72,7 @@ public class MeeshQuest {
         			
         		}
         	}
-        	canvas.save("meeshMap");
+        	//canvas.save("meeshMap");
         } catch (SAXException | IOException | ParserConfigurationException e) {
         	//System.out.println("Fatal Error"+e.getMessage());
         	if (results != null) {

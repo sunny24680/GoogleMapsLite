@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="part2in.xsd" 
+spatialWidth="100" spatialHeight="100" pmOrder="3" g="4">
+   
+  
+   <createCity name="n" x="1" y="2" radius="0" color="red" />
+   <createCity name="o" x="1" y="4" radius="0" color="red" />
+   <createCity name="p" x="1" y="51" radius="0" color="red" />
+   <createCity name="q" x="5" y="40" radius="0" color="red" />
+   <printAvlTree  />
+   <createCity name="r" x="5" y="46" radius="0" color="red" />
+   <printAvlTree  />
+   <createCity name="s" x="5" y="2" radius="0" color="red" />
+   <printAvlTree  />
+   <createCity name="t" x="7" y="4" radius="0" color="red" />
+   <printAvlTree  />
+   <createCity name="u" x="7" y="2" radius="0" color="red" />
+   <printAvlTree  />
+   <createCity name="v" x="9" y="4" radius="0" color="red" />
+   <printAvlTree  />
+   <createCity name="w" x="7" y="51" radius="0" color="red" />
+   <printAvlTree  />
+   <createCity name="x" x="7" y="40" radius="0" color="red" />
+   <printAvlTree  />
+   <createCity name="y" x="7" y="46" radius="0" color="red" />
+   <printAvlTree  />
+   <createCity id="2" name="z" x="7" y="18" radius="0" color="red" />
+
+   <mapCity id="1" name="A" />
+   <mapCity name="B" />
+   <mapCity name="C" />
+   <mapCity name="D" />
+   <mapCity name="E" />
+
+
+  <printAvlTree  />
+</commands>

@@ -1,0 +1,20 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xsi:noNamespaceSchemaLocation="part2in.xsd"
+ 	pmOrder="3"
+ 	g="1" 
+ 	spatialWidth="256" 
+ 	spatialHeight="256">
+
+ 	<createCity name="Tel_Aviv" x="32" y="59" radius="0" color="blue"/>
+ 	<createCity name="Jerusalem" x="200" y="138" radius="0" color="blue"/>
+ 	<createCity name="Herzliya" x="32" y="138" radius="0" color="blue"/>
+ 	<createCity name="Haifa" x="157" y="59" radius="0" color="blue"/>
+
+ 	<mapRoad start="Tel_Aviv" end="Haifa"/>
+ 	<mapCity name="Herzliya"/>
+ 	<mapCity name="Jerusalem"/>
+
+ 	<nearestCityToRoad start="Haifa" end="Tel_Aviv"/>
+
+</commands>

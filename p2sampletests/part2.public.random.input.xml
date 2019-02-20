@@ -1,0 +1,110 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part2in.xsd"
+	pmOrder="3" spatialWidth="64" spatialHeight="64" g="3">
+ 
+ <createCity x="5" y="5" name="A" radius="0" color="black" />
+ <createCity x="6" y="6" name="B" radius="0" color="black" />
+ <createCity x="5" y="4" name="C" radius="0" color="black" />
+ <createCity x="5" y="6" name="D" radius="0" color="black" />
+ <createCity x="4" y="5" name="E" radius="0" color="black" />
+ <createCity x="6" y="5" name="F" radius="0" color="black" />
+ <createCity x="4" y="4" name="G" radius="0" color="black" />
+ <createCity x="4" y="3" name="H" radius="0" color="black" />
+ <createCity x="33" y="33" name="I" radius="0" color="black" />
+ <createCity x="34" y="33" name="J" radius="0" color="black" />
+ <createCity x="35" y="33" name="K" radius="0" color="black" />
+ <createCity x="36" y="33" name="L" radius="0" color="black" />
+ <createCity x="37" y="33" name="M" radius="0" color="black" />
+ <createCity x="38" y="33" name="N" radius="0" color="black" />
+ 
+ <mapRoad start="A" end="A" id="1"/>
+ <mapRoad start="B" end="A" />
+ <mapRoad start="C" end="A" />
+ <mapRoad start="D" end="A" />
+ <mapRoad start="E" end="A" />
+ <mapRoad start="F" end="A" />
+ <mapRoad start="G" end="A" />
+ <mapRoad start="H" end="A" />
+ <mapRoad start="H" end="B" />
+ <mapRoad start="B" end="C" />
+ <mapRoad start="B" end="D" />
+ <mapRoad start="B" end="E" />
+ <mapRoad start="B" end="F" />
+ <mapRoad start="B" end="G" />
+ <mapRoad start="B" end="H" />
+ <mapRoad start="C" end="D" />
+ <mapRoad start="C" end="E" />
+ <mapRoad start="C" end="F" />
+ <mapRoad start="C" end="G" />
+ <mapRoad start="C" end="H" />
+ <mapRoad start="D" end="E" />
+ <mapRoad start="D" end="F" />
+ <mapRoad start="D" end="G" />
+ <mapRoad start="D" end="H" />
+ <mapRoad start="E" end="F" />
+ <mapRoad start="E" end="G" />
+ <mapRoad start="E" end="H" />
+ <mapRoad start="F" end="G" />
+ <mapRoad start="F" end="H" />
+ <mapRoad start="G" end="H" />
+ 
+ <mapRoad start="A" end="I" />
+ <mapRoad start="A" end="J" />
+ <mapRoad start="A" end="K" />
+ <mapRoad start="A" end="L" />
+ <mapRoad start="A" end="M" />
+ <mapRoad start="A" end="N" />
+ <mapRoad start="B" end="I" />
+ <mapRoad start="B" end="J" />
+ <mapRoad start="B" end="K" />
+ <mapRoad start="B" end="L" />
+ <mapRoad start="B" end="M" />
+ <mapRoad start="B" end="N" />
+ <mapRoad start="C" end="I" />
+ <mapRoad start="C" end="J" />
+ <mapRoad start="C" end="K" />
+ <mapRoad start="C" end="L" />
+ <mapRoad start="C" end="M" />
+ <mapRoad start="C" end="N" />
+ <mapRoad start="D" end="I" />
+ <mapRoad start="D" end="J" />
+ <mapRoad start="D" end="K" />
+ <mapRoad start="D" end="L" />
+ <mapRoad start="D" end="M" />
+ <mapRoad start="D" end="N" />
+ <mapRoad start="E" end="I" />
+ <mapRoad start="E" end="J" />
+ <mapRoad start="E" end="K" />
+ <mapRoad start="E" end="L" />
+ <mapRoad start="E" end="M" />
+ <mapRoad start="E" end="N" />
+ <mapRoad start="F" end="I" />
+ <mapRoad start="F" end="J" />
+ <mapRoad start="F" end="K" />
+ <mapRoad start="F" end="L" />
+ <mapRoad start="F" end="M" />
+ <mapRoad start="F" end="N" />
+ <mapRoad start="G" end="I" />
+ <mapRoad start="G" end="J" />
+ <mapRoad start="G" end="K" />
+ <mapRoad start="G" end="L" />
+ <mapRoad start="G" end="M" />
+ <mapRoad start="G" end="N" />
+ <mapRoad start="H" end="I" />
+ <mapRoad start="H" end="J" />
+ <mapRoad start="H" end="K" />
+ <mapRoad start="H" end="L" />
+ <mapRoad start="H" end="M" />
+ <mapRoad start="H" end="N" />
+ 
+ <mapRoad start="I" end="J" />
+ <mapRoad start="J" end="K" />
+ <mapRoad start="K" end="L" />
+ <mapRoad start="L" end="M" />
+ <mapRoad start="M" end="N" />
+
+ <rangeRoads x="5" y="5" radius="4" />
+ <printPMQuadtree/>
+  
+</commands>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<results>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="n"/>
+      <x value="1"/>
+      <y value="2"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="o"/>
+      <x value="1"/>
+      <y value="4"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="p"/>
+      <x value="1"/>
+      <y value="51"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="q"/>
+      <x value="5"/>
+      <y value="40"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="r"/>
+      <x value="5"/>
+      <y value="46"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="s"/>
+      <x value="5"/>
+      <y value="2"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="t"/>
+      <x value="7"/>
+      <y value="4"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="u"/>
+      <x value="7"/>
+      <y value="2"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="v"/>
+      <x value="9"/>
+      <y value="4"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="w"/>
+      <x value="7"/>
+      <y value="51"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="x"/>
+      <x value="7"/>
+      <y value="40"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="y"/>
+      <x value="7"/>
+      <y value="46"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="z"/>
+      <x value="7"/>
+      <y value="18"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="a"/>
+      <x value="50"/>
+      <y value="50"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="b"/>
+      <x value="40"/>
+      <y value="40"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="c"/>
+      <x value="46"/>
+      <y value="46"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="d"/>
+      <x value="2"/>
+      <y value="2"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="e"/>
+      <x value="4"/>
+      <y value="4"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="f"/>
+      <x value="51"/>
+      <y value="50"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="g"/>
+      <x value="41"/>
+      <y value="40"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="h"/>
+      <x value="42"/>
+      <y value="46"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="i"/>
+      <x value="22"/>
+      <y value="2"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="j"/>
+      <x value="44"/>
+      <y value="4"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="k"/>
+      <x value="1"/>
+      <y value="50"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="l"/>
+      <x value="1"/>
+      <y value="40"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="m"/>
+      <x value="1"/>
+      <y value="46"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="n1"/>
+      <x value="4"/>
+      <y value="9"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="o1"/>
+      <x value="35"/>
+      <y value="49"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="p1"/>
+      <x value="24"/>
+      <y value="75"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="q1"/>
+      <x value="2"/>
+      <y value="35"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="r1"/>
+      <x value="150"/>
+      <y value="9"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <success>
+    <command name="createCity"/>
+    <parameters>
+      <name value="s1"/>
+      <x value="140"/>
+      <y value="49"/>
+      <radius value="0"/>
+      <color value="red"/>
+    </parameters>
+    <output/>
+  </success>
+  <error type="nameNotInDictionary">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="A"/>
+    </parameters>
+  </error>
+  <error type="nameNotInDictionary">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="B"/>
+    </parameters>
+  </error>
+  <error type="nameNotInDictionary">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="C"/>
+    </parameters>
+  </error>
+  <error type="nameNotInDictionary">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="D"/>
+    </parameters>
+  </error>
+  <error type="nameNotInDictionary">
+    <command name="mapCity"/>
+    <parameters>
+      <name value="E"/>
+    </parameters>
+  </error>
+  <success>
+    <command name="printAvlTree"/>
+    <parameters/>
+    <output>
+      <AvlGTree cardinality="32" height="10" maxImbalance="7">
+        <node key="q" value="(5,40)">
+          <node key="s" value="(5,2)">
+            <node key="t" value="(7,4)">
+              <node key="u" value="(7,2)">
+                <node key="v" value="(9,4)">
+                  <node key="w" value="(7,51)">
+                    <node key="x" value="(7,40)">
+                      <node key="y" value="(7,46)">
+                        <node key="z" value="(7,18)">
+                          <emptyChild/>
+                          <emptyChild/>
+                        </node>
+                        <emptyChild/>
+                      </node>
+                      <emptyChild/>
+                    </node>
+                    <emptyChild/>
+                  </node>
+                  <emptyChild/>
+                </node>
+                <emptyChild/>
+              </node>
+              <node key="s1" value="(140,49)">
+                <emptyChild/>
+                <emptyChild/>
+              </node>
+            </node>
+            <node key="r" value="(5,46)">
+              <node key="r1" value="(150,9)">
+                <emptyChild/>
+                <emptyChild/>
+              </node>
+              <node key="q1" value="(2,35)">
+                <emptyChild/>
+                <emptyChild/>
+              </node>
+            </node>
+          </node>
+          <node key="n" value="(1,2)">
+            <node key="o" value="(1,4)">
+              <node key="p" value="(1,51)">
+                <node key="p1" value="(24,75)">
+                  <emptyChild/>
+                  <emptyChild/>
+                </node>
+                <node key="o1" value="(35,49)">
+                  <emptyChild/>
+                  <emptyChild/>
+                </node>
+              </node>
+              <node key="n1" value="(4,9)">
+                <emptyChild/>
+                <emptyChild/>
+              </node>
+            </node>
+            <node key="d" value="(2,2)">
+              <node key="f" value="(51,50)">
+                <node key="g" value="(41,40)">
+                  <node key="h" value="(42,46)">
+                    <node key="i" value="(22,2)">
+                      <node key="j" value="(44,4)">
+                        <node key="k" value="(1,50)">
+                          <node key="l" value="(1,40)">
+                            <node key="m" value="(1,46)">
+                              <emptyChild/>
+                              <emptyChild/>
+                            </node>
+                            <emptyChild/>
+                          </node>
+                          <emptyChild/>
+                        </node>
+                        <emptyChild/>
+                      </node>
+                      <emptyChild/>
+                    </node>
+                    <emptyChild/>
+                  </node>
+                  <emptyChild/>
+                </node>
+                <node key="e" value="(4,4)">
+                  <emptyChild/>
+                  <emptyChild/>
+                </node>
+              </node>
+              <node key="b" value="(40,40)">
+                <node key="c" value="(46,46)">
+                  <emptyChild/>
+                  <emptyChild/>
+                </node>
+                <node key="a" value="(50,50)">
+                  <emptyChild/>
+                  <emptyChild/>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </AvlGTree>
+    </output>
+  </success>
+</results>

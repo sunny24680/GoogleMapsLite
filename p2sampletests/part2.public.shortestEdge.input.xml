@@ -1,0 +1,73 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part2in.xsd"
+	spatialWidth="1024"
+	spatialHeight="1024"
+	g="3"
+	pmOrder="3">
+
+ <createCity name="Baltimore" x="256" y="256" radius="0" color="black"/>
+ <createCity name="Chicago" x="512" y="512" radius="0" color="black"/>
+ <createCity name="London" x="128" y="128" radius="0" color="black"/>
+ <createCity name="Tokyo" x="300" y="300" radius="0" color="black"/>
+ <createCity name="Paris" x="1000" y="1000" radius="0" color="black"/>
+ <createCity name="Boston" x="256" y="700" radius="0" color="black"/>
+ <createCity name="New_York" x="300" y="500" radius="0" color="black"/>
+ <createCity name="Los_Angelos" x="700" y="200" radius="0" color="black"/>
+ <createCity name="Pittsburg" x="750" y="400" radius="0" color="black"/>
+ <createCity name="Atlanta" x="800" y="600" radius="0" color="black"/>
+ 
+ <createCity name="A" x="275" y="300" radius="0" color="black"/>
+ <createCity name="B" x="500" y="487" radius="0" color="black"/>
+ <createCity name="C" x="600" y="769" radius="0" color="black"/>
+ <createCity name="D" x="900" y="900" radius="0" color="black"/>
+ <createCity name="E" x="30" y="100" radius="0" color="black"/>
+
+<createCity name="F" x="100" y="700" radius="0" color="black"/>
+ <createCity name="G" x="200" y="500" radius="0" color="black"/>
+ <createCity name="H" x="450" y="345" radius="0" color="black"/>
+ <createCity name="I" x="580" y="430" radius="0" color="black"/>
+ <createCity name="J" x="512" y="600" radius="0" color="black"/>
+ 
+<mapRoad start="Paris" end="Boston"/>
+<mapRoad start="New_York" end="Los_Angelos"/>
+<mapRoad start="Pittsburg" end="Chicago"/>
+<mapRoad start="Pittsburg" end="Baltimore"/>
+<mapRoad start="Pittsburg" end="Atlanta"/>
+<mapRoad start="London" end="Tokyo"/>
+<mapRoad start="Tokyo" end="Atlanta"/>
+<mapRoad start="Tokyo" end="New_York"/>
+<mapRoad start="Tokyo" end="Boston"/>
+<mapRoad start="Paris" end="Tokyo"/>
+<mapRoad start="Paris" end="New_York"/>
+<mapRoad start="Boston" end="Lost_Angelos"/>
+<mapRoad start="Boston" end="New_York"/>
+<mapRoad start="Atlanta" end="Boston"/>
+
+<mapRoad start="A" end="B"/>
+<mapRoad start="B" end="C"/>
+<mapRoad start="C" end="D"/>
+<mapRoad start="E" end="D"/>
+<mapRoad start="E" end="A"/>
+<mapRoad start="Paris" end="A"/>
+<mapRoad start="Paris" end="B"/>
+<mapRoad start="C" end="Lost_Angelos"/>
+<mapRoad start="Boston" end="E"/>
+<mapRoad start="F" end="Boston"/>
+<mapRoad start="J" end="I"/> 
+
+<shortestPath start="Tokyo" end="Paris"/>
+<shortestPath start="Pittsburg" end="Boston"/>
+<shortestPath start="Pittsburg" end="Los_Angelos"/>
+<shortestPath start="C" end="F"/>
+<shortestPath start="C" end="Boston"/>
+
+<shortestPath start="X" end="Boston"/>
+<shortestPath start="C" end="X"/>
+<shortestPath start="C" end="New_York"/>
+<shortestPath start="F" end="New_Y"/>
+<shortestPath start="C" end="J"/>
+<shortestPath start="J" end="J"/>
+<shortestPath start="J" end="Boston"/>
+
+</commands>

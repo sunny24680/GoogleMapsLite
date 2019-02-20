@@ -3,8 +3,8 @@ package cmsc420.stucture.PMQT;
 public class PM1QT extends PMQT{
 	static Validator v = new PM1Validator();
 	
-	public PM1QT() {
-		super(v);
+	public PM1QT(int x, int y) {
+		super(v, x, y);
 	}
 	
 	private static class PM1Validator implements Validator{

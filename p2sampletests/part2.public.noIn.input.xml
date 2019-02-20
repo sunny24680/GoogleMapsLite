@@ -1,0 +1,14 @@
+<commands
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="part2in.xsd"
+	pmOrder="3" spatialWidth="64" spatialHeight="64" g="3">
+ 
+ <createCity x="16" y="16" name="A" radius="0" color="black" />
+ <createCity x="48" y="48" name="B" radius="0" color="black" />
+ <mapRoad start="A" end="B"/>
+
+
+ 
+ <printPMQuadtree/>
+  
+</commands>
